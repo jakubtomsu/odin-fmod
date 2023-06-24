@@ -1,5 +1,5 @@
 # odin-fmod
-Odin bindings for [FMOD](https://www.fmod.com/)
+WIP Odin bindings for [FMOD](https://www.fmod.com/).
 
 Current version: `2.02.15`
 
