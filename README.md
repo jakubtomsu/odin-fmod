@@ -10,6 +10,12 @@ Includes `core`, `fsbank` and `studio` APIs. The `dll` and `lib` files are downl
 ## Example
 You can see example usage in [example.odin](example/example.odin). Runs on raylib.
 
+Run with:
+```cmd
+cd example
+odin run .
+```
+
 ## TODO
 - Add more examples
 - Translate constants to enums and bit_sets.
