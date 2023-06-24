@@ -1,5 +1,5 @@
 # odin-fmod
-Odin bindings for [FMOD](https://www.fmod.com/)
+WIP Odin bindings for [FMOD](https://www.fmod.com/).
 
 Current version: `2.02.15`
 
@@ -9,6 +9,12 @@ Includes `core`, `fsbank` and `studio` APIs. The `dll` and `lib` files are downl
 
 ## Example
 You can see example usage in [example.odin](example/example.odin). Runs on raylib.
+
+Run with:
+```cmd
+cd example
+odin run .
+```
 
 ## TODO
 - Add more examples
