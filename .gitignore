@@ -1,0 +1,8 @@
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.dll
+*.lib
+*.a
+*.dynlib
