@@ -4,7 +4,7 @@ import "core:fmt"
 import "core:math/linalg"
 import rl "vendor:raylib"
 import "core:sys/windows"
-import fmod "../fmod/core"
+import fmod "../../fmod/core"
 
 // Based on the '3D' example from FMOD core
 
@@ -18,6 +18,7 @@ _main :: proc() -> fmod.RESULT {
     rl.SetTargetFPS(60)
 
     system: ^fmod.SYSTEM
+
     windows.CoInitializeEx(nil, .APARTMENTTHREADED)
 
     fmod.System_Create(&system, fmod.VERSION) or_return
@@ -89,6 +90,14 @@ _main :: proc() -> fmod.RESULT {
 
         rl.EndDrawing()
     }
+
+    fmod.Sound_Release(sound1) or_return
+    fmod.Sound_Release(sound2) or_return
+
+    fmod.System_Close(system) or_return
+    fmod.System_Release(system) or_return
+
+    windows.CoUninitialize()
 
     return .OK
 }
