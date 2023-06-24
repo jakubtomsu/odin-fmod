@@ -3,7 +3,7 @@ Odin bindings for [FMOD](https://www.fmod.com/)
 
 Current version: `2.02.15`
 
-Includes `core`, `fsbank` and `studio` APIs.
+Includes `core`, `fsbank` and `studio` APIs. The `dll` and `lib` files are downloaded from https://www.fmod.com/download.
 
 [FMOD API documentation](https://www.fmod.com/docs/2.00/api/welcome.html)
 
