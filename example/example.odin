@@ -4,7 +4,7 @@ import "core:fmt"
 import "core:math/linalg"
 import rl "vendor:raylib"
 import "core:sys/windows"
-import fmod ".."
+import fmod "../fmod/core"
 
 // Based on the '3D' example from FMOD core
 
@@ -85,6 +85,7 @@ _main :: proc() -> fmod.RESULT {
         rl.EndMode3D()
 
         rl.DrawFPS(2, 2)
+        rl.DrawText("Press F to play swish.wav", 2, 24, 20, rl.WHITE)
 
         rl.EndDrawing()
     }

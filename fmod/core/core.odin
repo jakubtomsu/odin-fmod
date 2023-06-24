@@ -15,9 +15,9 @@ LOGGING_ENABLED :: #config(FMOD_CORE_LOGGING_ENABLED, ODIN_DEBUG)
 
 when ODIN_OS == .Windows {
     when LOGGING_ENABLED {
-        foreign import lib "system:lib/x64/fmodL_vc.lib"
+        foreign import lib "lib/windows/x64/fmodL_vc.lib"
     } else {
-        foreign import lib "system:fmod_vc.lib"
+        foreign import lib "lib/windows/x64/fmod_vc.lib"
     }
 }
 

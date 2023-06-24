@@ -13,8 +13,13 @@ package fmod_studio
 
 import fmod "../core"
 
-foreign import lib "lib/x64/fmodstudio_vc.lib"
-
+when ODIN_OS == .Windows {
+    when fmod.LOGGING_ENABLED {
+        foreign import lib "lib/windows/x64/fmodstudioL_vc.lib"
+    } else {
+        foreign import lib "lib/windows/x64/fmodstudio_vc.lib"
+    }
+}
 @(default_calling_convention = "c", link_prefix = "FMOD_Studio_")
 foreign lib {
 
