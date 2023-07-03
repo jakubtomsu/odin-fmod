@@ -68,7 +68,7 @@ foreign lib {
     System_GetNumListeners :: proc(system: ^SYSTEM, numlisteners: ^i32) -> fmod.RESULT ---
     System_SetNumListeners :: proc(system: ^SYSTEM, numlisteners: i32) -> fmod.RESULT ---
     System_GetListenerAttributes :: proc(system: ^SYSTEM, index: i32, attributes: ^fmod._3D_ATTRIBUTES, attenuationposition: ^fmod.VECTOR) -> fmod.RESULT ---
-    System_SetListenerAttributes :: proc(system: ^SYSTEM, index: i32, #by_ptr attributes: fmod._3D_ATTRIBUTES, #by_ptr attenuationposition: fmod.VECTOR) -> fmod.RESULT ---
+    System_SetListenerAttributes :: proc(system: ^SYSTEM, index: i32, #by_ptr attributes: fmod._3D_ATTRIBUTES, attenuationposition: ^fmod.VECTOR) -> fmod.RESULT ---
     System_GetListenerWeight :: proc(system: ^SYSTEM, index: i32, weight: ^f32) -> fmod.RESULT ---
     System_SetListenerWeight :: proc(system: ^SYSTEM, index: i32, weight: f32) -> fmod.RESULT ---
     System_LoadBankFile :: proc(system: ^SYSTEM, filename: cstring, flags: LOAD_BANK_FLAGS, bank: ^^BANK) -> fmod.RESULT ---
