@@ -121,7 +121,7 @@ foreign lib {
     EventDescription_IsStream :: proc(eventdescription: ^EVENTDESCRIPTION, isStream: ^b32) -> fmod.RESULT ---
     EventDescription_Is3D :: proc(eventdescription: ^EVENTDESCRIPTION, is3D: ^b32) -> fmod.RESULT ---
     EventDescription_IsDopplerEnabled :: proc(eventdescription: ^EVENTDESCRIPTION, doppler: ^b32) -> fmod.RESULT ---
-    EventDescription_HasSustainPoi32 :: proc(eventdescription: ^EVENTDESCRIPTION, sustainPoi32: ^b32) -> fmod.RESULT ---
+    EventDescription_HasSustainPoint :: proc(eventdescription: ^EVENTDESCRIPTION, sustainPoint: ^b32) -> fmod.RESULT ---
     EventDescription_CreateInstance :: proc(eventdescription: ^EVENTDESCRIPTION, instance: ^^EVENTINSTANCE) -> fmod.RESULT ---
     EventDescription_GetInstanceCount :: proc(eventdescription: ^EVENTDESCRIPTION, count: ^i32) -> fmod.RESULT ---
     EventDescription_GetInstanceList :: proc(eventdescription: ^EVENTDESCRIPTION, array: ^^EVENTINSTANCE, capacity: i32, count: ^i32) -> fmod.RESULT ---
