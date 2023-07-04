@@ -60,7 +60,7 @@ foreign lib {
     System_SetSoftwareFormat :: proc(system: ^SYSTEM, samplerate: i32, speakermode: SPEAKERMODE, numrawspeakers: i32) -> RESULT ---
     System_GetSoftwareFormat :: proc(system: ^SYSTEM, samplerate: ^i32, speakermode: ^SPEAKERMODE, numrawspeakers: ^i32) -> RESULT ---
     System_SetDSPBufferSize :: proc(system: ^SYSTEM, bufferlength: u32, numbuffers: i32) -> RESULT ---
-    System_GetDSPBufferSize :: proc(system: ^SYSTEM, bufferlength: u32, numbuffers: ^i32) -> RESULT ---
+    System_GetDSPBufferSize :: proc(system: ^SYSTEM, bufferlength: ^u32, numbuffers: ^i32) -> RESULT ---
     System_SetFileSystem :: proc(system: ^SYSTEM, useropen: FILE_OPEN_CALLBACK, userclose: FILE_CLOSE_CALLBACK, userread: FILE_READ_CALLBACK, userseek: FILE_SEEK_CALLBACK, userasyncread: FILE_ASYNCREAD_CALLBACK, userasynccancel: FILE_ASYNCCANCEL_CALLBACK, blockalign: i32) -> RESULT ---
     System_AttachFileSystem :: proc(system: ^SYSTEM, useropen: FILE_OPEN_CALLBACK, userclose: FILE_CLOSE_CALLBACK, userread: FILE_READ_CALLBACK, userseek: FILE_SEEK_CALLBACK) -> RESULT ---
     System_SetAdvancedSettings :: proc(system: ^SYSTEM, settings: ^ADVANCEDSETTINGS) -> RESULT ---
@@ -69,20 +69,20 @@ foreign lib {
 
     // Plug-in support.
     System_SetPluginPath :: proc(system: ^SYSTEM, path: cstring) -> RESULT ---
-    System_LoadPlugin :: proc(system: ^SYSTEM, filename: cstring, handle: u32, priority: u32) -> RESULT ---
+    System_LoadPlugin :: proc(system: ^SYSTEM, filename: cstring, handle: ^u32, priority: u32) -> RESULT ---
     System_UnloadPlugin :: proc(system: ^SYSTEM, handle: u32) -> RESULT ---
     System_GetNumNestedPlugins :: proc(system: ^SYSTEM, handle: u32, count: ^i32) -> RESULT ---
-    System_GetNestedPlugin :: proc(system: ^SYSTEM, handle: u32, index: i32, nestedhandle: u32) -> RESULT ---
+    System_GetNestedPlugin :: proc(system: ^SYSTEM, handle: u32, index: i32, nestedhandle: ^u32) -> RESULT ---
     System_GetNumPlugins :: proc(system: ^SYSTEM, plugintype: PLUGINTYPE, numplugins: ^i32) -> RESULT ---
-    System_GetPluginHandle :: proc(system: ^SYSTEM, plugintype: PLUGINTYPE, index: i32, handle: u32) -> RESULT ---
-    System_GetPluginInfo :: proc(system: ^SYSTEM, handle: u32, plugintype: ^PLUGINTYPE, name: ^u8, namelen: i32, version: u32) -> RESULT ---
+    System_GetPluginHandle :: proc(system: ^SYSTEM, plugintype: PLUGINTYPE, index: i32, handle: ^u32) -> RESULT ---
+    System_GetPluginInfo :: proc(system: ^SYSTEM, handle: u32, plugintype: ^PLUGINTYPE, name: ^u8, namelen: i32, version: ^u32) -> RESULT ---
     System_SetOutputByPlugin :: proc(system: ^SYSTEM, handle: u32) -> RESULT ---
-    System_GetOutputByPlugin :: proc(system: ^SYSTEM, handle: u32) -> RESULT ---
+    System_GetOutputByPlugin :: proc(system: ^SYSTEM, handle: ^u32) -> RESULT ---
     System_CreateDSPByPlugin :: proc(system: ^SYSTEM, handle: u32, dsp: ^^DSP) -> RESULT ---
     System_GetDSPInfoByPlugin :: proc(system: ^SYSTEM, handle: u32, description: ^^DSP_DESCRIPTION) -> RESULT ---
-    System_RegisterCodec :: proc(system: ^SYSTEM, description: ^CODEC_DESCRIPTION, handle: u32, priority: u32) -> RESULT ---
-    System_RegisterDSP :: proc(system: ^SYSTEM, #by_ptr description: DSP_DESCRIPTION, handle: u32) -> RESULT ---
-    System_RegisterOutput :: proc(system: ^SYSTEM, #by_ptr description: OUTPUT_DESCRIPTION, handle: u32) -> RESULT ---
+    System_RegisterCodec :: proc(system: ^SYSTEM, description: ^CODEC_DESCRIPTION, handle: ^u32, priority: u32) -> RESULT ---
+    System_RegisterDSP :: proc(system: ^SYSTEM, #by_ptr description: DSP_DESCRIPTION, handle: ^u32) -> RESULT ---
+    System_RegisterOutput :: proc(system: ^SYSTEM, #by_ptr description: OUTPUT_DESCRIPTION, handle: ^u32) -> RESULT ---
 
     // Init/Close.
     System_Init :: proc(system: ^SYSTEM, maxchannels: i32, flags: INITFLAGS, extradriverdata: rawptr) -> RESULT ---
@@ -93,7 +93,7 @@ foreign lib {
     System_SetSpeakerPosition :: proc(system: ^SYSTEM, speaker: SPEAKER, x: f32, y: f32, active: b32) -> RESULT ---
     System_GetSpeakerPosition :: proc(system: ^SYSTEM, speaker: SPEAKER, x: ^f32, y: ^f32, active: ^b32) -> RESULT ---
     System_SetStreamBufferSize :: proc(system: ^SYSTEM, filebuffersize: u32, filebuffersizetype: TIMEUNIT) -> RESULT ---
-    System_GetStreamBufferSize :: proc(system: ^SYSTEM, filebuffersize: u32, filebuffersizetype: ^TIMEUNIT) -> RESULT ---
+    System_GetStreamBufferSize :: proc(system: ^SYSTEM, filebuffersize: ^u32, filebuffersizetype: ^TIMEUNIT) -> RESULT ---
     System_Set3DSettings :: proc(system: ^SYSTEM, dopplerscale: f32, distancefactor: f32, rolloffscale: f32) -> RESULT ---
     System_Get3DSettings :: proc(system: ^SYSTEM, dopplerscale: ^f32, distancefactor: ^f32, rolloffscale: ^f32) -> RESULT ---
     System_Set3DNumListeners :: proc(system: ^SYSTEM, numlisteners: i32) -> RESULT ---
@@ -107,7 +107,7 @@ foreign lib {
     System_GetSpeakerModeChannels :: proc(system: ^SYSTEM, mode: SPEAKERMODE, channels: ^i32) -> RESULT ---
 
     // System information functions.
-    System_GetVersion :: proc(system: ^SYSTEM, version: u32) -> RESULT ---
+    System_GetVersion :: proc(system: ^SYSTEM, version: ^u32) -> RESULT ---
     System_GetOutputHandle :: proc(system: ^SYSTEM, handle: ^rawptr) -> RESULT ---
     System_GetChannelsPlaying :: proc(system: ^SYSTEM, channels: ^i32, realchannels: ^i32) -> RESULT ---
     System_GetCPUUsage :: proc(system: ^SYSTEM, usage: ^CPU_USAGE) -> RESULT ---
@@ -143,7 +143,7 @@ foreign lib {
     // Recording API.
     System_GetRecordNumDrivers :: proc(system: ^SYSTEM, numdrivers: ^i32, numconnected: ^i32) -> RESULT ---
     System_GetRecordDriverInfo :: proc(system: ^SYSTEM, id: i32, name: ^u8, namelen: i32, guid: ^GUID, systemrate: ^i32, speakermode: ^SPEAKERMODE, speakermodechannels: ^i32, state: ^DRIVER_STATE) -> RESULT ---
-    System_GetRecordPosition :: proc(system: ^SYSTEM, id: i32, position: u32) -> RESULT ---
+    System_GetRecordPosition :: proc(system: ^SYSTEM, id: i32, position: ^u32) -> RESULT ---
     System_RecordStart :: proc(system: ^SYSTEM, id: i32, sound: ^SOUND, loop: b32) -> RESULT ---
     System_RecordStop :: proc(system: ^SYSTEM, id: i32) -> RESULT ---
     System_IsRecording :: proc(system: ^SYSTEM, id: i32, recording: ^b32) -> RESULT ---
@@ -175,7 +175,7 @@ foreign lib {
     // Standard sound manipulation functions.
     //
 
-    Sound_Lock :: proc(sound: ^SOUND, offset: u32, length: u32, ptr1: ^rawptr, ptr2: ^rawptr, len1: u32, len2: u32) -> RESULT ---
+    Sound_Lock :: proc(sound: ^SOUND, offset: u32, length: u32, ptr1: ^rawptr, ptr2: ^rawptr, len1: ^u32, len2: ^u32) -> RESULT ---
     Sound_Unlock :: proc(sound: ^SOUND, ptr1: rawptr, ptr2: rawptr, len1: u32, len2: u32) -> RESULT ---
     Sound_SetDefaults :: proc(sound: ^SOUND, frequency: f32, priority: i32) -> RESULT ---
     Sound_GetDefaults :: proc(sound: ^SOUND, frequency: ^f32, priority: ^i32) -> RESULT ---
@@ -183,18 +183,18 @@ foreign lib {
     Sound_Get3DMinMaxDistance :: proc(sound: ^SOUND, min: ^f32, max: ^f32) -> RESULT ---
     Sound_Set3DConeSettings :: proc(sound: ^SOUND, insideconeangle: f32, outsideconeangle: f32, outsidevolume: f32) -> RESULT ---
     Sound_Get3DConeSettings :: proc(sound: ^SOUND, insideconeangle: ^f32, outsideconeangle: ^f32, outsidevolume: ^f32) -> RESULT ---
-    Sound_Set3DCustomRolloff :: proc(sound: ^SOUND, poi32s: ^VECTOR, numpoi32s: i32) -> RESULT ---
-    Sound_Get3DCustomRolloff :: proc(sound: ^SOUND, poi32s: ^^VECTOR, numpoi32s: ^i32) -> RESULT ---
+    Sound_Set3DCustomRolloff :: proc(sound: ^SOUND, points: ^VECTOR, numpoints: i32) -> RESULT ---
+    Sound_Get3DCustomRolloff :: proc(sound: ^SOUND, points: ^^VECTOR, numpoints: ^i32) -> RESULT ---
     Sound_GetSubSound :: proc(sound: ^SOUND, index: i32, subsound: ^^SOUND) -> RESULT ---
     Sound_GetSubSoundParent :: proc(sound: ^SOUND, parentsound: ^^SOUND) -> RESULT ---
     Sound_GetName :: proc(sound: ^SOUND, name: ^u8, namelen: i32) -> RESULT ---
-    Sound_GetLength :: proc(sound: ^SOUND, length: u32, lengthtype: TIMEUNIT) -> RESULT ---
+    Sound_GetLength :: proc(sound: ^SOUND, length: ^u32, lengthtype: TIMEUNIT) -> RESULT ---
     Sound_GetFormat :: proc(sound: ^SOUND, _type: ^SOUND_TYPE, format: ^SOUND_FORMAT, channels: ^i32, bits: ^i32) -> RESULT ---
     Sound_GetNumSubSounds :: proc(sound: ^SOUND, numsubsounds: ^i32) -> RESULT ---
     Sound_GetNumTags :: proc(sound: ^SOUND, numtags: ^i32, numtagsupdated: ^i32) -> RESULT ---
     Sound_GetTag :: proc(sound: ^SOUND, name: cstring, index: i32, tag: ^TAG) -> RESULT ---
-    Sound_GetOpenState :: proc(sound: ^SOUND, openstate: ^OPENSTATE, percentbuffered: u32, starving: ^b32, diskbusy: ^b32) -> RESULT ---
-    Sound_ReadData :: proc(sound: ^SOUND, buffer: rawptr, length: u32, read: u32) -> RESULT ---
+    Sound_GetOpenState :: proc(sound: ^SOUND, openstate: ^OPENSTATE, percentbuffered: ^u32, starving: ^b32, diskbusy: ^b32) -> RESULT ---
+    Sound_ReadData :: proc(sound: ^SOUND, buffer: rawptr, length: u32, read: ^u32) -> RESULT ---
     Sound_SeekData :: proc(sound: ^SOUND, pcm: u32) -> RESULT ---
 
     Sound_SetSoundGroup :: proc(sound: ^SOUND, soundgroup: ^SOUNDGROUP) -> RESULT ---
@@ -203,14 +203,14 @@ foreign lib {
 
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////
-    // Synchronization poAPI: i32.  These poi32s can come from markers embedded in wav files, and can also generate channel callbacks.
+    // Synchronization poAPI: i32.  These points can come from markers embedded in wav files, and can also generate channel callbacks.
     //
 
-    Sound_GetNumSyncPoi32s :: proc(sound: ^SOUND, numsyncpoi32s: ^i32) -> RESULT ---
-    Sound_GetSyncPoi32 :: proc(sound: ^SOUND, index: i32, poi32: ^^SYNCPOINT) -> RESULT ---
-    Sound_GetSyncPoi32Info :: proc(sound: ^SOUND, poi32: ^SYNCPOINT, name: ^u8, namelen: i32, offset: u32, offsettype: TIMEUNIT) -> RESULT ---
-    Sound_AddSyncPoi32 :: proc(sound: ^SOUND, offset: u32, offsettype: TIMEUNIT, name: cstring, poi32: ^^SYNCPOINT) -> RESULT ---
-    Sound_DeleteSyncPoi32 :: proc(sound: ^SOUND, poi32: ^SYNCPOINT) -> RESULT ---
+    Sound_GetNumSyncPoints :: proc(sound: ^SOUND, numsyncpoints: ^i32) -> RESULT ---
+    Sound_GetSyncPoint :: proc(sound: ^SOUND, index: i32, point: ^^SYNCPOINT) -> RESULT ---
+    Sound_GetSyncPointInfo :: proc(sound: ^SOUND, point: ^SYNCPOINT, name: ^u8, namelen: i32, offset: ^u32, offsettype: TIMEUNIT) -> RESULT ---
+    Sound_AddSyncPoint :: proc(sound: ^SOUND, offset: u32, offsettype: TIMEUNIT, name: cstring, point: ^^SYNCPOINT) -> RESULT ---
+    Sound_DeleteSyncPoint :: proc(sound: ^SOUND, point: ^SYNCPOINT) -> RESULT ---
 
 
 
@@ -222,8 +222,8 @@ foreign lib {
     Sound_GetMode :: proc(sound: ^SOUND, mode: ^MODE) -> RESULT ---
     Sound_SetLoopCount :: proc(sound: ^SOUND, loopcount: i32) -> RESULT ---
     Sound_GetLoopCount :: proc(sound: ^SOUND, loopcount: ^i32) -> RESULT ---
-    Sound_SetLoopPoi32s :: proc(sound: ^SOUND, loopstart: u32, loopstarttype: TIMEUNIT, loopend: u32, loopendtype: TIMEUNIT) -> RESULT ---
-    Sound_GetLoopPoi32s :: proc(sound: ^SOUND, loopstart: u32, loopstarttype: TIMEUNIT, loopend: u32, loopendtype: TIMEUNIT) -> RESULT ---
+    Sound_SetLoopPoints :: proc(sound: ^SOUND, loopstart: u32, loopstarttype: TIMEUNIT, loopend: u32, loopendtype: TIMEUNIT) -> RESULT ---
+    Sound_GetLoopPoints :: proc(sound: ^SOUND, loopstart: ^u32, loopstarttype: TIMEUNIT, loopend: ^u32, loopendtype: TIMEUNIT) -> RESULT ---
 
 
 
@@ -302,10 +302,10 @@ foreign lib {
     Channel_GetDSPClock :: proc(channel: ^CHANNEL, dspclock: ^uint, parentclock: ^uint) -> RESULT ---
     Channel_SetDelay :: proc(channel: ^CHANNEL, dspclock_start: uint, dspclock_end: uint, stopchannels: b32) -> RESULT ---
     Channel_GetDelay :: proc(channel: ^CHANNEL, dspclock_start: ^uint, dspclock_end: ^uint, stopchannels: ^b32) -> RESULT ---
-    Channel_AddFadePoi32 :: proc(channel: ^CHANNEL, dspclock: uint, volume: f32) -> RESULT ---
-    Channel_SetFadePoi32Ramp :: proc(channel: ^CHANNEL, dspclock: uint, volume: f32) -> RESULT ---
-    Channel_RemoveFadePoi32s :: proc(channel: ^CHANNEL, dspclock_start: uint, dspclock_end: uint) -> RESULT ---
-    Channel_GetFadePoi32s :: proc(channel: ^CHANNEL, numpoi32s: u32, poi32_dspclock: ^uint, poi32_volume: ^f32) -> RESULT ---
+    Channel_AddFadePoint :: proc(channel: ^CHANNEL, dspclock: uint, volume: f32) -> RESULT ---
+    Channel_SetFadePointRamp :: proc(channel: ^CHANNEL, dspclock: uint, volume: f32) -> RESULT ---
+    Channel_RemoveFadePoints :: proc(channel: ^CHANNEL, dspclock_start: uint, dspclock_end: uint) -> RESULT ---
+    Channel_GetFadePoints :: proc(channel: ^CHANNEL, numpoints: ^u32, point_dspclock: ^uint, point_volume: ^f32) -> RESULT ---
 
 
 
@@ -334,8 +334,8 @@ foreign lib {
     Channel_Get3DConeSettings :: proc(channel: ^CHANNEL, insideconeangle: ^f32, outsideconeangle: ^f32, outsidevolume: ^f32) -> RESULT ---
     Channel_Set3DConeOrientation :: proc(channel: ^CHANNEL, orientation: ^VECTOR) -> RESULT ---
     Channel_Get3DConeOrientation :: proc(channel: ^CHANNEL, orientation: ^VECTOR) -> RESULT ---
-    Channel_Set3DCustomRolloff :: proc(channel: ^CHANNEL, poi32s: ^VECTOR, numpoi32s: i32) -> RESULT ---
-    Channel_Get3DCustomRolloff :: proc(channel: ^CHANNEL, poi32s: ^^VECTOR, numpoi32s: ^i32) -> RESULT ---
+    Channel_Set3DCustomRolloff :: proc(channel: ^CHANNEL, points: ^VECTOR, numpoints: i32) -> RESULT ---
+    Channel_Get3DCustomRolloff :: proc(channel: ^CHANNEL, points: ^^VECTOR, numpoints: ^i32) -> RESULT ---
     Channel_Set3DOcclusion :: proc(channel: ^CHANNEL, directocclusion: f32, reverbocclusion: f32) -> RESULT ---
     Channel_Get3DOcclusion :: proc(channel: ^CHANNEL, directocclusion: ^f32, reverbocclusion: ^f32) -> RESULT ---
     Channel_Set3DSpread :: proc(channel: ^CHANNEL, angle: f32) -> RESULT ---
@@ -367,13 +367,13 @@ foreign lib {
     Channel_SetPriority :: proc(channel: ^CHANNEL, priority: i32) -> RESULT ---
     Channel_GetPriority :: proc(channel: ^CHANNEL, priority: ^i32) -> RESULT ---
     Channel_SetPosition :: proc(channel: ^CHANNEL, position: u32, postype: TIMEUNIT) -> RESULT ---
-    Channel_GetPosition :: proc(channel: ^CHANNEL, position: u32, postype: TIMEUNIT) -> RESULT ---
+    Channel_GetPosition :: proc(channel: ^CHANNEL, position: ^u32, postype: TIMEUNIT) -> RESULT ---
     Channel_SetChannelGroup :: proc(channel: ^CHANNEL, channelgroup: ^CHANNELGROUP) -> RESULT ---
     Channel_GetChannelGroup :: proc(channel: ^CHANNEL, channelgroup: ^^CHANNELGROUP) -> RESULT ---
     Channel_SetLoopCount :: proc(channel: ^CHANNEL, loopcount: i32) -> RESULT ---
     Channel_GetLoopCount :: proc(channel: ^CHANNEL, loopcount: ^i32) -> RESULT ---
-    Channel_SetLoopPoi32s :: proc(channel: ^CHANNEL, loopstart: u32, loopstarttype: TIMEUNIT, loopend: u32, loopendtype: TIMEUNIT) -> RESULT ---
-    Channel_GetLoopPoi32s :: proc(channel: ^CHANNEL, loopstart: u32, loopstarttype: TIMEUNIT, loopend: u32, loopendtype: TIMEUNIT) -> RESULT ---
+    Channel_SetLoopPoints :: proc(channel: ^CHANNEL, loopstart: u32, loopstarttype: TIMEUNIT, loopend: u32, loopendtype: TIMEUNIT) -> RESULT ---
+    Channel_GetLoopPoints :: proc(channel: ^CHANNEL, loopstart: ^u32, loopstarttype: TIMEUNIT, loopend: ^u32, loopendtype: TIMEUNIT) -> RESULT ---
 
 
 
@@ -441,10 +441,10 @@ foreign lib {
     ChannelGroup_GetDSPClock :: proc(channelgroup: ^CHANNELGROUP, dspclock: ^uint, parentclock: ^uint) -> RESULT ---
     ChannelGroup_SetDelay :: proc(channelgroup: ^CHANNELGROUP, dspclock_start: uint, dspclock_end: uint, stopchannels: b32) -> RESULT ---
     ChannelGroup_GetDelay :: proc(channelgroup: ^CHANNELGROUP, dspclock_start: ^uint, dspclock_end: ^uint, stopchannels: ^b32) -> RESULT ---
-    ChannelGroup_AddFadePoi32 :: proc(channelgroup: ^CHANNELGROUP, dspclock: uint, volume: f32) -> RESULT ---
-    ChannelGroup_SetFadePoi32Ramp :: proc(channelgroup: ^CHANNELGROUP, dspclock: uint, volume: f32) -> RESULT ---
-    ChannelGroup_RemoveFadePoi32s :: proc(channelgroup: ^CHANNELGROUP, dspclock_start: uint, dspclock_end: uint) -> RESULT ---
-    ChannelGroup_GetFadePoi32s :: proc(channelgroup: ^CHANNELGROUP, numpoi32s: u32, poi32_dspclock: ^uint, poi32_volume: ^f32) -> RESULT ---
+    ChannelGroup_AddFadePoint :: proc(channelgroup: ^CHANNELGROUP, dspclock: uint, volume: f32) -> RESULT ---
+    ChannelGroup_SetFadePointRamp :: proc(channelgroup: ^CHANNELGROUP, dspclock: uint, volume: f32) -> RESULT ---
+    ChannelGroup_RemoveFadePoints :: proc(channelgroup: ^CHANNELGROUP, dspclock_start: uint, dspclock_end: uint) -> RESULT ---
+    ChannelGroup_GetFadePoints :: proc(channelgroup: ^CHANNELGROUP, numpoints: ^u32, point_dspclock: ^uint, point_volume: ^f32) -> RESULT ---
 
 
 
@@ -473,8 +473,8 @@ foreign lib {
     ChannelGroup_Get3DConeSettings :: proc(channelgroup: ^CHANNELGROUP, insideconeangle: ^f32, outsideconeangle: ^f32, outsidevolume: ^f32) -> RESULT ---
     ChannelGroup_Set3DConeOrientation :: proc(channelgroup: ^CHANNELGROUP, orientation: ^VECTOR) -> RESULT ---
     ChannelGroup_Get3DConeOrientation :: proc(channelgroup: ^CHANNELGROUP, orientation: ^VECTOR) -> RESULT ---
-    ChannelGroup_Set3DCustomRolloff :: proc(channelgroup: ^CHANNELGROUP, poi32s: ^VECTOR, numpoi32s: i32) -> RESULT ---
-    ChannelGroup_Get3DCustomRolloff :: proc(channelgroup: ^CHANNELGROUP, poi32s: ^^VECTOR, numpoi32s: ^i32) -> RESULT ---
+    ChannelGroup_Set3DCustomRolloff :: proc(channelgroup: ^CHANNELGROUP, points: ^VECTOR, numpoints: i32) -> RESULT ---
+    ChannelGroup_Get3DCustomRolloff :: proc(channelgroup: ^CHANNELGROUP, points: ^^VECTOR, numpoints: ^i32) -> RESULT ---
     ChannelGroup_Set3DOcclusion :: proc(channelgroup: ^CHANNELGROUP, directocclusion: f32, reverbocclusion: f32) -> RESULT ---
     ChannelGroup_Get3DOcclusion :: proc(channelgroup: ^CHANNELGROUP, directocclusion: ^f32, reverbocclusion: ^f32) -> RESULT ---
     ChannelGroup_Set3DSpread :: proc(channelgroup: ^CHANNELGROUP, angle: f32) -> RESULT ---
@@ -617,7 +617,7 @@ foreign lib {
     DSP_GetParameterf32 :: proc(dsp: ^DSP, index: i32, value: ^f32, valuestr: ^u8, valuestrlen: i32) -> RESULT ---
     DSP_GetParameterInt :: proc(dsp: ^DSP, index: i32, value: ^i32, valuestr: ^u8, valuestrlen: i32) -> RESULT ---
     DSP_GetParameterb32 :: proc(dsp: ^DSP, index: i32, value: ^b32, valuestr: ^u8, valuestrlen: i32) -> RESULT ---
-    DSP_GetParameterData :: proc(dsp: ^DSP, index: i32, data: ^rawptr, length: u32, valuestr: ^u8, valuestrlen: i32) -> RESULT ---
+    DSP_GetParameterData :: proc(dsp: ^DSP, index: i32, data: ^rawptr, length: ^u32, valuestr: ^u8, valuestrlen: i32) -> RESULT ---
     DSP_GetNumParameters :: proc(dsp: ^DSP, numparams: ^i32) -> RESULT ---
     DSP_GetParameterInfo :: proc(dsp: ^DSP, index: i32, desc: ^^DSP_PARAMETER_DESC) -> RESULT ---
     DSP_GetDataParameterIndex :: proc(dsp: ^DSP, datatype: i32, index: ^i32) -> RESULT ---
@@ -629,7 +629,7 @@ foreign lib {
     // DSP attributes.
     //
 
-    DSP_GetInfo :: proc(dsp: ^DSP, name: ^u8, version: u32, channels: ^i32, configwidth: ^i32, configheight: ^i32) -> RESULT ---
+    DSP_GetInfo :: proc(dsp: ^DSP, name: ^u8, version: ^u32, channels: ^i32, configwidth: ^i32, configheight: ^i32) -> RESULT ---
     DSP_GetType :: proc(dsp: ^DSP, _type: ^DSP_TYPE) -> RESULT ---
     DSP_GetIdle :: proc(dsp: ^DSP, idle: ^b32) -> RESULT ---
 
@@ -651,7 +651,7 @@ foreign lib {
     DSP_SetMeteringEnabled :: proc(dsp: ^DSP, inputEnabled: b32, outputEnabled: b32) -> RESULT ---
     DSP_GetMeteringEnabled :: proc(dsp: ^DSP, inputEnabled: ^b32, outputEnabled: ^b32) -> RESULT ---
     DSP_GetMeteringInfo :: proc(dsp: ^DSP, inputInfo: ^DSP_METERING_INFO, outputInfo: ^DSP_METERING_INFO) -> RESULT ---
-    DSP_GetCPUUsage :: proc(dsp: ^DSP, exclusive: u32, inclusive: u32) -> RESULT ---
+    DSP_GetCPUUsage :: proc(dsp: ^DSP, exclusive: ^u32, inclusive: ^u32) -> RESULT ---
 
 
 
