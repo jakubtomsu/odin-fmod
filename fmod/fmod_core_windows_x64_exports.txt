@@ -954,6 +954,7 @@ File Type: LIBRARY
                   FMOD_OS_File_Write
                   FMOD_OS_Thread_Create
                   FMOD_OS_Thread_Destroy
+                  FMOD_OS_Time_GetUs
                   FMOD_OS_Time_Sleep
                   FMOD_Reverb3D_Get3DAttributes
                   FMOD_Reverb3D_GetActive
