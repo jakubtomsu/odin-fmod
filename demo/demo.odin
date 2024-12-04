@@ -4,7 +4,7 @@ import "core:fmt"
 import "core:math/linalg"
 import rl "vendor:raylib"
 import "core:sys/windows"
-import fmod "../../fmod/core"
+import fmod "../fmod/core"
 
 // Based on the '3D' example from FMOD core
 

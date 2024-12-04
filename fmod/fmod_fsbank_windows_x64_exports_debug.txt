@@ -1,0 +1,6 @@
+Microsoft (R) COFF/PE Dumper Version 14.33.31631.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file fsbank\lib\windows\x64\fmodL_vc.lib
+LINK : fatal error LNK1181: cannot open input file 'fsbank\lib\windows\x64\fmodL_vc.lib'

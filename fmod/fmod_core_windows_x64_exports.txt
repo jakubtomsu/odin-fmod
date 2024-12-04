@@ -1,0 +1,1129 @@
+Microsoft (R) COFF/PE Dumper Version 14.33.31631.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file core\lib\windows\x64\fmod_vc.lib
+
+File Type: LIBRARY
+
+     Exports
+
+       ordinal    name
+
+                  ?addDSP@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@HPEAVDSP@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::addDSP(int,class FMOD::DSP *))
+                  ?addFadePoint@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@_KM@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::addFadePoint(unsigned __int64,float))
+                  ?addGroup@ChannelGroup@FMOD@@QEAA?AW4FMOD_RESULT@@PEAV12@_NPEAPEAVDSPConnection@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelGroup::addGroup(class FMOD::ChannelGroup *,bool,class FMOD::DSPConnection * *))
+                  ?addInput@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@PEAV12@PEAPEAVDSPConnection@2@W4FMOD_DSPCONNECTION_TYPE@@@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::addInput(class FMOD::DSP *,class FMOD::DSPConnection * *,enum FMOD_DSPCONNECTION_TYPE))
+                  ?addPolygon@Geometry@FMOD@@QEAA?AW4FMOD_RESULT@@MM_NHPEBUFMOD_VECTOR@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Geometry::addPolygon(float,float,bool,int,struct FMOD_VECTOR const *,int *))
+                  ?addSyncPoint@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@IIPEBDPEAPEAUFMOD_SYNCPOINT@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::addSyncPoint(unsigned int,unsigned int,char const *,struct FMOD_SYNCPOINT * *))
+                  ?attachChannelGroupToPort@System@FMOD@@QEAA?AW4FMOD_RESULT@@W4FMOD_PORT_TYPE@@_KPEAVChannelGroup@2@_N@Z (public: enum FMOD_RESULT __cdecl FMOD::System::attachChannelGroupToPort(enum FMOD_PORT_TYPE,unsigned __int64,class FMOD::ChannelGroup *,bool))
+                  ?attachFileSystem@System@FMOD@@QEAA?AW4FMOD_RESULT@@P6A?AW43@PEBDPEAIPEAPEAXPEAX@ZP6A?AW43@33@ZP6A?AW43@33I13@ZP6A?AW43@3I3@Z@Z (public: enum FMOD_RESULT __cdecl FMOD::System::attachFileSystem(enum FMOD_RESULT (__cdecl*)(char const *,unsigned int *,void * *,void *),enum FMOD_RESULT (__cdecl*)(void *,void *),enum FMOD_RESULT (__cdecl*)(void *,void *,unsigned int,unsigned int *,void *),enum FMOD_RESULT (__cdecl*)(void *,unsigned int,void *)))
+                  ?close@System@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::System::close(void))
+                  ?createChannelGroup@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEBDPEAPEAVChannelGroup@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::createChannelGroup(char const *,class FMOD::ChannelGroup * *))
+                  ?createClientProfile@SystemI@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::SystemI::createClientProfile(void))
+                  ?createDSP@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEBUFMOD_DSP_DESCRIPTION@@PEAPEAVDSP@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::createDSP(struct FMOD_DSP_DESCRIPTION const *,class FMOD::DSP * *))
+                  ?createDSPByPlugin@System@FMOD@@QEAA?AW4FMOD_RESULT@@IPEAPEAVDSP@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::createDSPByPlugin(unsigned int,class FMOD::DSP * *))
+                  ?createDSPByType@System@FMOD@@QEAA?AW4FMOD_RESULT@@W4FMOD_DSP_TYPE@@PEAPEAVDSP@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::createDSPByType(enum FMOD_DSP_TYPE,class FMOD::DSP * *))
+                  ?createDiskFile@SystemI@FMOD@@QEAA?AW4FMOD_RESULT@@PEBDPEAUFMOD_CREATESOUNDEXINFO@@PEAPEAVFile@2@PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::SystemI::createDiskFile(char const *,struct FMOD_CREATESOUNDEXINFO *,class FMOD::File * *,bool *))
+                  ?createGeometry@System@FMOD@@QEAA?AW4FMOD_RESULT@@HHPEAPEAVGeometry@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::createGeometry(int,int,class FMOD::Geometry * *))
+                  ?createMemoryFile@SystemI@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAVFile@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::SystemI::createMemoryFile(class FMOD::File * *))
+                  ?createReverb3D@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAVReverb3D@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::createReverb3D(class FMOD::Reverb3D * *))
+                  ?createSound@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEBDIPEAUFMOD_CREATESOUNDEXINFO@@PEAPEAVSound@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::createSound(char const *,unsigned int,struct FMOD_CREATESOUNDEXINFO *,class FMOD::Sound * *))
+                  ?createSoundGroup@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEBDPEAPEAVSoundGroup@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::createSoundGroup(char const *,class FMOD::SoundGroup * *))
+                  ?createStream@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEBDIPEAUFMOD_CREATESOUNDEXINFO@@PEAPEAVSound@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::createStream(char const *,unsigned int,struct FMOD_CREATESOUNDEXINFO *,class FMOD::Sound * *))
+                  ?deleteSyncPoint@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAUFMOD_SYNCPOINT@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::deleteSyncPoint(struct FMOD_SYNCPOINT *))
+                  ?detachChannelGroupFromPort@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAVChannelGroup@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::detachChannelGroupFromPort(class FMOD::ChannelGroup *))
+                  ?disconnectAll@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@_N0@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::disconnectAll(bool,bool))
+                  ?disconnectFrom@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@PEAV12@PEAVDSPConnection@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::disconnectFrom(class FMOD::DSP *,class FMOD::DSPConnection *))
+                  ?get3DAttributes@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAUFMOD_VECTOR@@0@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::get3DAttributes(struct FMOD_VECTOR *,struct FMOD_VECTOR *))
+                  ?get3DAttributes@Reverb3D@FMOD@@QEAA?AW4FMOD_RESULT@@PEAUFMOD_VECTOR@@PEAM1@Z (public: enum FMOD_RESULT __cdecl FMOD::Reverb3D::get3DAttributes(struct FMOD_VECTOR *,float *,float *))
+                  ?get3DConeOrientation@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAUFMOD_VECTOR@@@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::get3DConeOrientation(struct FMOD_VECTOR *))
+                  ?get3DConeSettings@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAM00@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::get3DConeSettings(float *,float *,float *))
+                  ?get3DConeSettings@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAM00@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::get3DConeSettings(float *,float *,float *))
+                  ?get3DCustomRolloff@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAUFMOD_VECTOR@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::get3DCustomRolloff(struct FMOD_VECTOR * *,int *))
+                  ?get3DCustomRolloff@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAUFMOD_VECTOR@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::get3DCustomRolloff(struct FMOD_VECTOR * *,int *))
+                  ?get3DDistanceFilter@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEA_NPEAM1@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::get3DDistanceFilter(bool *,float *,float *))
+                  ?get3DDopplerLevel@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAM@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::get3DDopplerLevel(float *))
+                  ?get3DLevel@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAM@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::get3DLevel(float *))
+                  ?get3DListenerAttributes@System@FMOD@@QEAA?AW4FMOD_RESULT@@HPEAUFMOD_VECTOR@@000@Z (public: enum FMOD_RESULT __cdecl FMOD::System::get3DListenerAttributes(int,struct FMOD_VECTOR *,struct FMOD_VECTOR *,struct FMOD_VECTOR *,struct FMOD_VECTOR *))
+                  ?get3DMinMaxDistance@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAM0@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::get3DMinMaxDistance(float *,float *))
+                  ?get3DMinMaxDistance@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAM0@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::get3DMinMaxDistance(float *,float *))
+                  ?get3DNumListeners@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::System::get3DNumListeners(int *))
+                  ?get3DOcclusion@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAM0@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::get3DOcclusion(float *,float *))
+                  ?get3DSettings@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAM00@Z (public: enum FMOD_RESULT __cdecl FMOD::System::get3DSettings(float *,float *,float *))
+                  ?get3DSpread@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAM@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::get3DSpread(float *))
+                  ?getActive@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::getActive(bool *))
+                  ?getActive@Geometry@FMOD@@QEAA?AW4FMOD_RESULT@@PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Geometry::getActive(bool *))
+                  ?getActive@Reverb3D@FMOD@@QEAA?AW4FMOD_RESULT@@PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Reverb3D::getActive(bool *))
+                  ?getAdvancedSettings@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAUFMOD_ADVANCEDSETTINGS@@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getAdvancedSettings(struct FMOD_ADVANCEDSETTINGS *))
+                  ?getAudibility@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAM@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::getAudibility(float *))
+                  ?getBypass@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::getBypass(bool *))
+                  ?getCPUUsage@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@PEAI0@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::getCPUUsage(unsigned int *,unsigned int *))
+                  ?getCPUUsage@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAUFMOD_CPU_USAGE@@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getCPUUsage(struct FMOD_CPU_USAGE *))
+                  ?getChannel@ChannelGroup@FMOD@@QEAA?AW4FMOD_RESULT@@HPEAPEAVChannel@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelGroup::getChannel(int,class FMOD::Channel * *))
+                  ?getChannel@System@FMOD@@QEAA?AW4FMOD_RESULT@@HPEAPEAVChannel@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getChannel(int,class FMOD::Channel * *))
+                  ?getChannelFormat@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@PEAIPEAHPEAW4FMOD_SPEAKERMODE@@@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::getChannelFormat(unsigned int *,int *,enum FMOD_SPEAKERMODE *))
+                  ?getChannelGroup@Channel@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAVChannelGroup@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::Channel::getChannelGroup(class FMOD::ChannelGroup * *))
+                  ?getChannelsPlaying@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH0@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getChannelsPlaying(int *,int *))
+                  ?getCurrentSound@Channel@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAVSound@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::Channel::getCurrentSound(class FMOD::Sound * *))
+                  ?getDSP@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@HPEAPEAVDSP@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::getDSP(int,class FMOD::DSP * *))
+                  ?getDSPBufferSize@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAIPEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getDSPBufferSize(unsigned int *,int *))
+                  ?getDSPClock@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEA_K0@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::getDSPClock(unsigned __int64 *,unsigned __int64 *))
+                  ?getDSPIndex@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAVDSP@2@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::getDSPIndex(class FMOD::DSP *,int *))
+                  ?getDSPInfoByPlugin@System@FMOD@@QEAA?AW4FMOD_RESULT@@IPEAPEBUFMOD_DSP_DESCRIPTION@@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getDSPInfoByPlugin(unsigned int,struct FMOD_DSP_DESCRIPTION const * *))
+                  ?getDSPInfoByType@System@FMOD@@QEAA?AW4FMOD_RESULT@@W4FMOD_DSP_TYPE@@PEAPEBUFMOD_DSP_DESCRIPTION@@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getDSPInfoByType(enum FMOD_DSP_TYPE,struct FMOD_DSP_DESCRIPTION const * *))
+                  ?getDataParameterIndex@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@HPEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::getDataParameterIndex(int,int *))
+                  ?getDefaultMixMatrix@System@FMOD@@QEAA?AW4FMOD_RESULT@@W4FMOD_SPEAKERMODE@@0PEAMH@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getDefaultMixMatrix(enum FMOD_SPEAKERMODE,enum FMOD_SPEAKERMODE,float *,int))
+                  ?getDefaults@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAMPEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::getDefaults(float *,int *))
+                  ?getDelay@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEA_K0PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::getDelay(unsigned __int64 *,unsigned __int64 *,bool *))
+                  ?getDriver@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getDriver(int *))
+                  ?getDriverInfo@System@FMOD@@QEAA?AW4FMOD_RESULT@@HPEADHPEAUFMOD_GUID@@PEAHPEAW4FMOD_SPEAKERMODE@@2@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getDriverInfo(int,char *,int,struct FMOD_GUID *,int *,enum FMOD_SPEAKERMODE *,int *))
+                  ?getFadePoints@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAIPEA_KPEAM@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::getFadePoints(unsigned int *,unsigned __int64 *,float *))
+                  ?getFileUsage@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEA_J00@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getFileUsage(__int64 *,__int64 *,__int64 *))
+                  ?getFormat@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAW4FMOD_SOUND_TYPE@@PEAW4FMOD_SOUND_FORMAT@@PEAH2@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::getFormat(enum FMOD_SOUND_TYPE *,enum FMOD_SOUND_FORMAT *,int *,int *))
+                  ?getFrequency@Channel@FMOD@@QEAA?AW4FMOD_RESULT@@PEAM@Z (public: enum FMOD_RESULT __cdecl FMOD::Channel::getFrequency(float *))
+                  ?getGeometryOcclusion@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEBUFMOD_VECTOR@@0PEAM1@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getGeometryOcclusion(struct FMOD_VECTOR const *,struct FMOD_VECTOR const *,float *,float *))
+                  ?getGeometrySettings@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAM@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getGeometrySettings(float *))
+                  ?getGlobals@FMOD@@YAXPEAPEAVGlobal@1@@Z (void __cdecl FMOD::getGlobals(class FMOD::Global * *))
+                  ?getGroup@ChannelGroup@FMOD@@QEAA?AW4FMOD_RESULT@@HPEAPEAV12@@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelGroup::getGroup(int,class FMOD::ChannelGroup * *))
+                  ?getIdle@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::getIdle(bool *))
+                  ?getIndex@Channel@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Channel::getIndex(int *))
+                  ?getInfo@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@PEADPEAIPEAH22@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::getInfo(char *,unsigned int *,int *,int *,int *))
+                  ?getInput@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@HPEAPEAV12@PEAPEAVDSPConnection@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::getInput(int,class FMOD::DSP * *,class FMOD::DSPConnection * *))
+                  ?getInput@DSPConnection@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAVDSP@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::DSPConnection::getInput(class FMOD::DSP * *))
+                  ?getLength@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAII@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::getLength(unsigned int *,unsigned int))
+                  ?getLoopCount@Channel@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Channel::getLoopCount(int *))
+                  ?getLoopCount@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::getLoopCount(int *))
+                  ?getLoopPoints@Channel@FMOD@@QEAA?AW4FMOD_RESULT@@PEAII0I@Z (public: enum FMOD_RESULT __cdecl FMOD::Channel::getLoopPoints(unsigned int *,unsigned int,unsigned int *,unsigned int))
+                  ?getLoopPoints@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAII0I@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::getLoopPoints(unsigned int *,unsigned int,unsigned int *,unsigned int))
+                  ?getLowPassGain@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAM@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::getLowPassGain(float *))
+                  ?getMasterChannelGroup@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAVChannelGroup@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getMasterChannelGroup(class FMOD::ChannelGroup * *))
+                  ?getMasterSoundGroup@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAVSoundGroup@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getMasterSoundGroup(class FMOD::SoundGroup * *))
+                  ?getMaxAudible@SoundGroup@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::SoundGroup::getMaxAudible(int *))
+                  ?getMaxAudibleBehavior@SoundGroup@FMOD@@QEAA?AW4FMOD_RESULT@@PEAW4FMOD_SOUNDGROUP_BEHAVIOR@@@Z (public: enum FMOD_RESULT __cdecl FMOD::SoundGroup::getMaxAudibleBehavior(enum FMOD_SOUNDGROUP_BEHAVIOR *))
+                  ?getMaxPolygons@Geometry@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH0@Z (public: enum FMOD_RESULT __cdecl FMOD::Geometry::getMaxPolygons(int *,int *))
+                  ?getMeteringEnabled@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@PEA_N0@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::getMeteringEnabled(bool *,bool *))
+                  ?getMeteringInfo@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@PEAUFMOD_DSP_METERING_INFO@@0@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::getMeteringInfo(struct FMOD_DSP_METERING_INFO *,struct FMOD_DSP_METERING_INFO *))
+                  ?getMix@DSPConnection@FMOD@@QEAA?AW4FMOD_RESULT@@PEAM@Z (public: enum FMOD_RESULT __cdecl FMOD::DSPConnection::getMix(float *))
+                  ?getMixMatrix@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAMPEAH1H@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::getMixMatrix(float *,int *,int *,int))
+                  ?getMixMatrix@DSPConnection@FMOD@@QEAA?AW4FMOD_RESULT@@PEAMPEAH1H@Z (public: enum FMOD_RESULT __cdecl FMOD::DSPConnection::getMixMatrix(float *,int *,int *,int))
+                  ?getMode@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAI@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::getMode(unsigned int *))
+                  ?getMode@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAI@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::getMode(unsigned int *))
+                  ?getMusicChannelVolume@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@HPEAM@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::getMusicChannelVolume(int,float *))
+                  ?getMusicNumChannels@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::getMusicNumChannels(int *))
+                  ?getMusicSpeed@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAM@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::getMusicSpeed(float *))
+                  ?getMute@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::getMute(bool *))
+                  ?getMuteFadeSpeed@SoundGroup@FMOD@@QEAA?AW4FMOD_RESULT@@PEAM@Z (public: enum FMOD_RESULT __cdecl FMOD::SoundGroup::getMuteFadeSpeed(float *))
+                  ?getName@ChannelGroup@FMOD@@QEAA?AW4FMOD_RESULT@@PEADH@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelGroup::getName(char *,int))
+                  ?getName@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEADH@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::getName(char *,int))
+                  ?getName@SoundGroup@FMOD@@QEAA?AW4FMOD_RESULT@@PEADH@Z (public: enum FMOD_RESULT __cdecl FMOD::SoundGroup::getName(char *,int))
+                  ?getNestedPlugin@System@FMOD@@QEAA?AW4FMOD_RESULT@@IHPEAI@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getNestedPlugin(unsigned int,int,unsigned int *))
+                  ?getNetworkProxy@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEADH@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getNetworkProxy(char *,int))
+                  ?getNetworkTimeout@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getNetworkTimeout(int *))
+                  ?getNumChannels@ChannelGroup@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelGroup::getNumChannels(int *))
+                  ?getNumDSPs@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::getNumDSPs(int *))
+                  ?getNumDrivers@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getNumDrivers(int *))
+                  ?getNumGroups@ChannelGroup@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelGroup::getNumGroups(int *))
+                  ?getNumInputs@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::getNumInputs(int *))
+                  ?getNumNestedPlugins@System@FMOD@@QEAA?AW4FMOD_RESULT@@IPEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getNumNestedPlugins(unsigned int,int *))
+                  ?getNumOutputs@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::getNumOutputs(int *))
+                  ?getNumParameters@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::getNumParameters(int *))
+                  ?getNumPlaying@SoundGroup@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::SoundGroup::getNumPlaying(int *))
+                  ?getNumPlugins@System@FMOD@@QEAA?AW4FMOD_RESULT@@W4FMOD_PLUGINTYPE@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getNumPlugins(enum FMOD_PLUGINTYPE,int *))
+                  ?getNumPolygons@Geometry@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Geometry::getNumPolygons(int *))
+                  ?getNumSounds@SoundGroup@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::SoundGroup::getNumSounds(int *))
+                  ?getNumSubSounds@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::getNumSubSounds(int *))
+                  ?getNumSyncPoints@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::getNumSyncPoints(int *))
+                  ?getNumTags@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH0@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::getNumTags(int *,int *))
+                  ?getOpenState@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAW4FMOD_OPENSTATE@@PEAIPEA_N2@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::getOpenState(enum FMOD_OPENSTATE *,unsigned int *,bool *,bool *))
+                  ?getOutput@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@HPEAPEAV12@PEAPEAVDSPConnection@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::getOutput(int,class FMOD::DSP * *,class FMOD::DSPConnection * *))
+                  ?getOutput@DSPConnection@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAVDSP@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::DSPConnection::getOutput(class FMOD::DSP * *))
+                  ?getOutput@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAW4FMOD_OUTPUTTYPE@@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getOutput(enum FMOD_OUTPUTTYPE *))
+                  ?getOutputByPlugin@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAI@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getOutputByPlugin(unsigned int *))
+                  ?getOutputChannelFormat@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@IHW4FMOD_SPEAKERMODE@@PEAIPEAHPEAW44@@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::getOutputChannelFormat(unsigned int,int,enum FMOD_SPEAKERMODE,unsigned int *,int *,enum FMOD_SPEAKERMODE *))
+                  ?getOutputHandle@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getOutputHandle(void * *))
+                  ?getParameterBool@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@HPEA_NPEADH@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::getParameterBool(int,bool *,char *,int))
+                  ?getParameterData@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@HPEAPEAXPEAIPEADH@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::getParameterData(int,void * *,unsigned int *,char *,int))
+                  ?getParameterFloat@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@HPEAMPEADH@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::getParameterFloat(int,float *,char *,int))
+                  ?getParameterInfo@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@HPEAPEAUFMOD_DSP_PARAMETER_DESC@@@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::getParameterInfo(int,struct FMOD_DSP_PARAMETER_DESC * *))
+                  ?getParameterInt@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@HPEAHPEADH@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::getParameterInt(int,int *,char *,int))
+                  ?getParentGroup@ChannelGroup@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAV12@@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelGroup::getParentGroup(class FMOD::ChannelGroup * *))
+                  ?getPaused@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::getPaused(bool *))
+                  ?getPitch@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAM@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::getPitch(float *))
+                  ?getPluginHandle@System@FMOD@@QEAA?AW4FMOD_RESULT@@W4FMOD_PLUGINTYPE@@HPEAI@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getPluginHandle(enum FMOD_PLUGINTYPE,int,unsigned int *))
+                  ?getPluginInfo@System@FMOD@@QEAA?AW4FMOD_RESULT@@IPEAW4FMOD_PLUGINTYPE@@PEADHPEAI@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getPluginInfo(unsigned int,enum FMOD_PLUGINTYPE *,char *,int,unsigned int *))
+                  ?getPolygonAttributes@Geometry@FMOD@@QEAA?AW4FMOD_RESULT@@HPEAM0PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Geometry::getPolygonAttributes(int,float *,float *,bool *))
+                  ?getPolygonNumVertices@Geometry@FMOD@@QEAA?AW4FMOD_RESULT@@HPEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Geometry::getPolygonNumVertices(int,int *))
+                  ?getPolygonVertex@Geometry@FMOD@@QEAA?AW4FMOD_RESULT@@HHPEAUFMOD_VECTOR@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Geometry::getPolygonVertex(int,int,struct FMOD_VECTOR *))
+                  ?getPosition@Channel@FMOD@@QEAA?AW4FMOD_RESULT@@PEAII@Z (public: enum FMOD_RESULT __cdecl FMOD::Channel::getPosition(unsigned int *,unsigned int))
+                  ?getPosition@Geometry@FMOD@@QEAA?AW4FMOD_RESULT@@PEAUFMOD_VECTOR@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Geometry::getPosition(struct FMOD_VECTOR *))
+                  ?getPriority@Channel@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Channel::getPriority(int *))
+                  ?getProperties@Reverb3D@FMOD@@QEAA?AW4FMOD_RESULT@@PEAUFMOD_REVERB_PROPERTIES@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Reverb3D::getProperties(struct FMOD_REVERB_PROPERTIES *))
+                  ?getRecordDriverInfo@System@FMOD@@QEAA?AW4FMOD_RESULT@@HPEADHPEAUFMOD_GUID@@PEAHPEAW4FMOD_SPEAKERMODE@@2PEAI@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getRecordDriverInfo(int,char *,int,struct FMOD_GUID *,int *,enum FMOD_SPEAKERMODE *,int *,unsigned int *))
+                  ?getRecordNumDrivers@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH0@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getRecordNumDrivers(int *,int *))
+                  ?getRecordPosition@System@FMOD@@QEAA?AW4FMOD_RESULT@@HPEAI@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getRecordPosition(int,unsigned int *))
+                  ?getReverbProperties@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@HPEAM@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::getReverbProperties(int,float *))
+                  ?getReverbProperties@System@FMOD@@QEAA?AW4FMOD_RESULT@@HPEAUFMOD_REVERB_PROPERTIES@@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getReverbProperties(int,struct FMOD_REVERB_PROPERTIES *))
+                  ?getRotation@Geometry@FMOD@@QEAA?AW4FMOD_RESULT@@PEAUFMOD_VECTOR@@0@Z (public: enum FMOD_RESULT __cdecl FMOD::Geometry::getRotation(struct FMOD_VECTOR *,struct FMOD_VECTOR *))
+                  ?getScale@Geometry@FMOD@@QEAA?AW4FMOD_RESULT@@PEAUFMOD_VECTOR@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Geometry::getScale(struct FMOD_VECTOR *))
+                  ?getSoftwareChannels@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getSoftwareChannels(int *))
+                  ?getSoftwareFormat@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAHPEAW4FMOD_SPEAKERMODE@@0@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getSoftwareFormat(int *,enum FMOD_SPEAKERMODE *,int *))
+                  ?getSound@SoundGroup@FMOD@@QEAA?AW4FMOD_RESULT@@HPEAPEAVSound@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::SoundGroup::getSound(int,class FMOD::Sound * *))
+                  ?getSoundGroup@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAVSoundGroup@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::getSoundGroup(class FMOD::SoundGroup * *))
+                  ?getSpeakerModeChannels@System@FMOD@@QEAA?AW4FMOD_RESULT@@W4FMOD_SPEAKERMODE@@PEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getSpeakerModeChannels(enum FMOD_SPEAKERMODE,int *))
+                  ?getSpeakerPosition@System@FMOD@@QEAA?AW4FMOD_RESULT@@W4FMOD_SPEAKER@@PEAM1PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getSpeakerPosition(enum FMOD_SPEAKER,float *,float *,bool *))
+                  ?getStreamBufferSize@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAI0@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getStreamBufferSize(unsigned int *,unsigned int *))
+                  ?getSubSound@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@HPEAPEAV12@@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::getSubSound(int,class FMOD::Sound * *))
+                  ?getSubSoundParent@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAV12@@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::getSubSoundParent(class FMOD::Sound * *))
+                  ?getSyncPoint@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@HPEAPEAUFMOD_SYNCPOINT@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::getSyncPoint(int,struct FMOD_SYNCPOINT * *))
+                  ?getSyncPointInfo@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAUFMOD_SYNCPOINT@@PEADHPEAII@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::getSyncPointInfo(struct FMOD_SYNCPOINT *,char *,int,unsigned int *,unsigned int))
+                  ?getSystemObject@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAVSystem@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::getSystemObject(class FMOD::System * *))
+                  ?getSystemObject@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAVSystem@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::getSystemObject(class FMOD::System * *))
+                  ?getSystemObject@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAVSystem@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::getSystemObject(class FMOD::System * *))
+                  ?getSystemObject@SoundGroup@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAVSystem@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::SoundGroup::getSystemObject(class FMOD::System * *))
+                  ?getTag@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEBDHPEAUFMOD_TAG@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::getTag(char const *,int,struct FMOD_TAG *))
+                  ?getType@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@PEAW4FMOD_DSP_TYPE@@@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::getType(enum FMOD_DSP_TYPE *))
+                  ?getType@DSPConnection@FMOD@@QEAA?AW4FMOD_RESULT@@PEAW4FMOD_DSPCONNECTION_TYPE@@@Z (public: enum FMOD_RESULT __cdecl FMOD::DSPConnection::getType(enum FMOD_DSPCONNECTION_TYPE *))
+                  ?getUserData@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::getUserData(void * *))
+                  ?getUserData@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::getUserData(void * *))
+                  ?getUserData@DSPConnection@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::DSPConnection::getUserData(void * *))
+                  ?getUserData@Geometry@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::Geometry::getUserData(void * *))
+                  ?getUserData@GeometryI@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::GeometryI::getUserData(void * *))
+                  ?getUserData@Reverb3D@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::Reverb3D::getUserData(void * *))
+                  ?getUserData@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::getUserData(void * *))
+                  ?getUserData@SoundGroup@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::SoundGroup::getUserData(void * *))
+                  ?getUserData@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getUserData(void * *))
+                  ?getUserDataInternal@SoundI@FMOD@@QEAA?AW4FMOD_RESULT@@PEAPEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::SoundI::getUserDataInternal(void * *))
+                  ?getVersion@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAI@Z (public: enum FMOD_RESULT __cdecl FMOD::System::getVersion(unsigned int *))
+                  ?getVolume@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAM@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::getVolume(float *))
+                  ?getVolume@SoundGroup@FMOD@@QEAA?AW4FMOD_RESULT@@PEAM@Z (public: enum FMOD_RESULT __cdecl FMOD::SoundGroup::getVolume(float *))
+                  ?getVolumeRamp@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::getVolumeRamp(bool *))
+                  ?getWetDryMix@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@PEAM00@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::getWetDryMix(float *,float *,float *))
+                  ?init@System@FMOD@@QEAA?AW4FMOD_RESULT@@HIPEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::System::init(int,unsigned int,void *))
+                  ?isPlaying@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::isPlaying(bool *))
+                  ?isRecording@System@FMOD@@QEAA?AW4FMOD_RESULT@@HPEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::System::isRecording(int,bool *))
+                  ?isVirtual@Channel@FMOD@@QEAA?AW4FMOD_RESULT@@PEA_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Channel::isVirtual(bool *))
+                  ?loadGeometry@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEBXHPEAPEAVGeometry@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::loadGeometry(void const *,int,class FMOD::Geometry * *))
+                  ?loadPlugin@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEBDPEAII@Z (public: enum FMOD_RESULT __cdecl FMOD::System::loadPlugin(char const *,unsigned int *,unsigned int))
+                  ?lock@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@IIPEAPEAX0PEAI1@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::lock(unsigned int,unsigned int,void * *,void * *,unsigned int *,unsigned int *))
+                  ?lockDSP@System@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::System::lockDSP(void))
+                  ?mixerResume@System@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::System::mixerResume(void))
+                  ?mixerSuspend@System@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::System::mixerSuspend(void))
+                  ?playDSP@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAVDSP@2@PEAVChannelGroup@2@_NPEAPEAVChannel@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::playDSP(class FMOD::DSP *,class FMOD::ChannelGroup *,bool,class FMOD::Channel * *))
+                  ?playSound@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAVSound@2@PEAVChannelGroup@2@_NPEAPEAVChannel@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::playSound(class FMOD::Sound *,class FMOD::ChannelGroup *,bool,class FMOD::Channel * *))
+                  ?readData@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAXIPEAI@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::readData(void *,unsigned int,unsigned int *))
+                  ?recordStart@System@FMOD@@QEAA?AW4FMOD_RESULT@@HPEAVSound@2@_N@Z (public: enum FMOD_RESULT __cdecl FMOD::System::recordStart(int,class FMOD::Sound *,bool))
+                  ?recordStop@System@FMOD@@QEAA?AW4FMOD_RESULT@@H@Z (public: enum FMOD_RESULT __cdecl FMOD::System::recordStop(int))
+                  ?registerCodec@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAUFMOD_CODEC_DESCRIPTION@@PEAII@Z (public: enum FMOD_RESULT __cdecl FMOD::System::registerCodec(struct FMOD_CODEC_DESCRIPTION *,unsigned int *,unsigned int))
+                  ?registerDSP@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEBUFMOD_DSP_DESCRIPTION@@PEAI@Z (public: enum FMOD_RESULT __cdecl FMOD::System::registerDSP(struct FMOD_DSP_DESCRIPTION const *,unsigned int *))
+                  ?registerOutput@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEBUFMOD_OUTPUT_DESCRIPTION@@PEAI@Z (public: enum FMOD_RESULT __cdecl FMOD::System::registerOutput(struct FMOD_OUTPUT_DESCRIPTION const *,unsigned int *))
+                  ?release@ChannelGroup@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::ChannelGroup::release(void))
+                  ?release@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::DSP::release(void))
+                  ?release@Geometry@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::Geometry::release(void))
+                  ?release@Reverb3D@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::Reverb3D::release(void))
+                  ?release@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::Sound::release(void))
+                  ?release@SoundGroup@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::SoundGroup::release(void))
+                  ?release@System@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::System::release(void))
+                  ?removeDSP@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAVDSP@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::removeDSP(class FMOD::DSP *))
+                  ?removeFadePoints@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@_K0@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::removeFadePoints(unsigned __int64,unsigned __int64))
+                  ?reset@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::DSP::reset(void))
+                  ?save@Geometry@FMOD@@QEAA?AW4FMOD_RESULT@@PEAXPEAH@Z (public: enum FMOD_RESULT __cdecl FMOD::Geometry::save(void *,int *))
+                  ?seekData@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@I@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::seekData(unsigned int))
+                  ?set3DAttributes@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEBUFMOD_VECTOR@@0@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::set3DAttributes(struct FMOD_VECTOR const *,struct FMOD_VECTOR const *))
+                  ?set3DAttributes@Reverb3D@FMOD@@QEAA?AW4FMOD_RESULT@@PEBUFMOD_VECTOR@@MM@Z (public: enum FMOD_RESULT __cdecl FMOD::Reverb3D::set3DAttributes(struct FMOD_VECTOR const *,float,float))
+                  ?set3DConeOrientation@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAUFMOD_VECTOR@@@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::set3DConeOrientation(struct FMOD_VECTOR *))
+                  ?set3DConeSettings@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@MMM@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::set3DConeSettings(float,float,float))
+                  ?set3DConeSettings@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@MMM@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::set3DConeSettings(float,float,float))
+                  ?set3DCustomRolloff@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAUFMOD_VECTOR@@H@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::set3DCustomRolloff(struct FMOD_VECTOR *,int))
+                  ?set3DCustomRolloff@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAUFMOD_VECTOR@@H@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::set3DCustomRolloff(struct FMOD_VECTOR *,int))
+                  ?set3DDistanceFilter@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@_NMM@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::set3DDistanceFilter(bool,float,float))
+                  ?set3DDopplerLevel@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@M@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::set3DDopplerLevel(float))
+                  ?set3DLevel@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@M@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::set3DLevel(float))
+                  ?set3DListenerAttributes@System@FMOD@@QEAA?AW4FMOD_RESULT@@HPEBUFMOD_VECTOR@@000@Z (public: enum FMOD_RESULT __cdecl FMOD::System::set3DListenerAttributes(int,struct FMOD_VECTOR const *,struct FMOD_VECTOR const *,struct FMOD_VECTOR const *,struct FMOD_VECTOR const *))
+                  ?set3DMinMaxDistance@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@MM@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::set3DMinMaxDistance(float,float))
+                  ?set3DMinMaxDistance@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@MM@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::set3DMinMaxDistance(float,float))
+                  ?set3DNumListeners@System@FMOD@@QEAA?AW4FMOD_RESULT@@H@Z (public: enum FMOD_RESULT __cdecl FMOD::System::set3DNumListeners(int))
+                  ?set3DOcclusion@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@MM@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::set3DOcclusion(float,float))
+                  ?set3DRolloffCallback@System@FMOD@@QEAA?AW4FMOD_RESULT@@P6AMPEAUFMOD_CHANNELCONTROL@@M@Z@Z (public: enum FMOD_RESULT __cdecl FMOD::System::set3DRolloffCallback(float (__cdecl*)(struct FMOD_CHANNELCONTROL *,float)))
+                  ?set3DSettings@System@FMOD@@QEAA?AW4FMOD_RESULT@@MMM@Z (public: enum FMOD_RESULT __cdecl FMOD::System::set3DSettings(float,float,float))
+                  ?set3DSpread@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@M@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::set3DSpread(float))
+                  ?setActive@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@_N@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::setActive(bool))
+                  ?setActive@Geometry@FMOD@@QEAA?AW4FMOD_RESULT@@_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Geometry::setActive(bool))
+                  ?setActive@Reverb3D@FMOD@@QEAA?AW4FMOD_RESULT@@_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Reverb3D::setActive(bool))
+                  ?setAdvancedSettings@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAUFMOD_ADVANCEDSETTINGS@@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::setAdvancedSettings(struct FMOD_ADVANCEDSETTINGS *))
+                  ?setBypass@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@_N@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::setBypass(bool))
+                  ?setCallback@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@P6A?AW43@PEAUFMOD_CHANNELCONTROL@@W4FMOD_CHANNELCONTROL_TYPE@@W4FMOD_CHANNELCONTROL_CALLBACK_TYPE@@PEAX3@Z@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::setCallback(enum FMOD_RESULT (__cdecl*)(struct FMOD_CHANNELCONTROL *,enum FMOD_CHANNELCONTROL_TYPE,enum FMOD_CHANNELCONTROL_CALLBACK_TYPE,void *,void *)))
+                  ?setCallback@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@P6A?AW43@PEAUFMOD_DSP@@W4FMOD_DSP_CALLBACK_TYPE@@PEAX@Z@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::setCallback(enum FMOD_RESULT (__cdecl*)(struct FMOD_DSP *,enum FMOD_DSP_CALLBACK_TYPE,void *)))
+                  ?setCallback@System@FMOD@@QEAA?AW4FMOD_RESULT@@P6A?AW43@PEAUFMOD_SYSTEM@@IPEAX11@ZI@Z (public: enum FMOD_RESULT __cdecl FMOD::System::setCallback(enum FMOD_RESULT (__cdecl*)(struct FMOD_SYSTEM *,unsigned int,void *,void *,void *),unsigned int))
+                  ?setChannelFormat@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@IHW4FMOD_SPEAKERMODE@@@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::setChannelFormat(unsigned int,int,enum FMOD_SPEAKERMODE))
+                  ?setChannelGroup@Channel@FMOD@@QEAA?AW4FMOD_RESULT@@PEAVChannelGroup@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::Channel::setChannelGroup(class FMOD::ChannelGroup *))
+                  ?setDSPBufferSize@System@FMOD@@QEAA?AW4FMOD_RESULT@@IH@Z (public: enum FMOD_RESULT __cdecl FMOD::System::setDSPBufferSize(unsigned int,int))
+                  ?setDSPIndex@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAVDSP@2@H@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::setDSPIndex(class FMOD::DSP *,int))
+                  ?setDefaults@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@MH@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::setDefaults(float,int))
+                  ?setDelay@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@_K0_N@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::setDelay(unsigned __int64,unsigned __int64,bool))
+                  ?setDriver@System@FMOD@@QEAA?AW4FMOD_RESULT@@H@Z (public: enum FMOD_RESULT __cdecl FMOD::System::setDriver(int))
+                  ?setFadePointRamp@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@_KM@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::setFadePointRamp(unsigned __int64,float))
+                  ?setFileSystem@System@FMOD@@QEAA?AW4FMOD_RESULT@@P6A?AW43@PEBDPEAIPEAPEAXPEAX@ZP6A?AW43@33@ZP6A?AW43@33I13@ZP6A?AW43@3I3@ZP6A?AW43@PEAUFMOD_ASYNCREADINFO@@3@Z9H@Z (public: enum FMOD_RESULT __cdecl FMOD::System::setFileSystem(enum FMOD_RESULT (__cdecl*)(char const *,unsigned int *,void * *,void *),enum FMOD_RESULT (__cdecl*)(void *,void *),enum FMOD_RESULT (__cdecl*)(void *,void *,unsigned int,unsigned int *,void *),enum FMOD_RESULT (__cdecl*)(void *,unsigned int,void *),enum FMOD_RESULT (__cdecl*)(struct FMOD_ASYNCREADINFO *,void *),enum FMOD_RESULT (__cdecl*)(struct FMOD_ASYNCREADINFO *,void *),int))
+                  ?setFrequency@Channel@FMOD@@QEAA?AW4FMOD_RESULT@@M@Z (public: enum FMOD_RESULT __cdecl FMOD::Channel::setFrequency(float))
+                  ?setGeometrySettings@System@FMOD@@QEAA?AW4FMOD_RESULT@@M@Z (public: enum FMOD_RESULT __cdecl FMOD::System::setGeometrySettings(float))
+                  ?setInternalCallback@SystemI@FMOD@@QEAA?AW4FMOD_RESULT@@HP6A?AW43@PEAUFMOD_SYSTEM@@IPEAX11@Z1@Z (public: enum FMOD_RESULT __cdecl FMOD::SystemI::setInternalCallback(int,enum FMOD_RESULT (__cdecl*)(struct FMOD_SYSTEM *,unsigned int,void *,void *,void *),void *))
+                  ?setLoopCount@Channel@FMOD@@QEAA?AW4FMOD_RESULT@@H@Z (public: enum FMOD_RESULT __cdecl FMOD::Channel::setLoopCount(int))
+                  ?setLoopCount@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@H@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::setLoopCount(int))
+                  ?setLoopPoints@Channel@FMOD@@QEAA?AW4FMOD_RESULT@@IIII@Z (public: enum FMOD_RESULT __cdecl FMOD::Channel::setLoopPoints(unsigned int,unsigned int,unsigned int,unsigned int))
+                  ?setLoopPoints@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@IIII@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::setLoopPoints(unsigned int,unsigned int,unsigned int,unsigned int))
+                  ?setLowPassGain@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@M@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::setLowPassGain(float))
+                  ?setMaxAudible@SoundGroup@FMOD@@QEAA?AW4FMOD_RESULT@@H@Z (public: enum FMOD_RESULT __cdecl FMOD::SoundGroup::setMaxAudible(int))
+                  ?setMaxAudibleBehavior@SoundGroup@FMOD@@QEAA?AW4FMOD_RESULT@@W4FMOD_SOUNDGROUP_BEHAVIOR@@@Z (public: enum FMOD_RESULT __cdecl FMOD::SoundGroup::setMaxAudibleBehavior(enum FMOD_SOUNDGROUP_BEHAVIOR))
+                  ?setMeteringEnabled@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@_N0@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::setMeteringEnabled(bool,bool))
+                  ?setMix@DSPConnection@FMOD@@QEAA?AW4FMOD_RESULT@@M@Z (public: enum FMOD_RESULT __cdecl FMOD::DSPConnection::setMix(float))
+                  ?setMixLevelsInput@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAMH@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::setMixLevelsInput(float *,int))
+                  ?setMixLevelsOutput@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@MMMMMMMM@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::setMixLevelsOutput(float,float,float,float,float,float,float,float))
+                  ?setMixMatrix@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAMHHH@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::setMixMatrix(float *,int,int,int))
+                  ?setMixMatrix@DSPConnection@FMOD@@QEAA?AW4FMOD_RESULT@@PEAMHHH@Z (public: enum FMOD_RESULT __cdecl FMOD::DSPConnection::setMixMatrix(float *,int,int,int))
+                  ?setMode@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@I@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::setMode(unsigned int))
+                  ?setMode@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@I@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::setMode(unsigned int))
+                  ?setMusicChannelVolume@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@HM@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::setMusicChannelVolume(int,float))
+                  ?setMusicSpeed@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@M@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::setMusicSpeed(float))
+                  ?setMute@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@_N@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::setMute(bool))
+                  ?setMuteFadeSpeed@SoundGroup@FMOD@@QEAA?AW4FMOD_RESULT@@M@Z (public: enum FMOD_RESULT __cdecl FMOD::SoundGroup::setMuteFadeSpeed(float))
+                  ?setNetworkProxy@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEBD@Z (public: enum FMOD_RESULT __cdecl FMOD::System::setNetworkProxy(char const *))
+                  ?setNetworkTimeout@System@FMOD@@QEAA?AW4FMOD_RESULT@@H@Z (public: enum FMOD_RESULT __cdecl FMOD::System::setNetworkTimeout(int))
+                  ?setOutput@System@FMOD@@QEAA?AW4FMOD_RESULT@@W4FMOD_OUTPUTTYPE@@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::setOutput(enum FMOD_OUTPUTTYPE))
+                  ?setOutputByPlugin@System@FMOD@@QEAA?AW4FMOD_RESULT@@I@Z (public: enum FMOD_RESULT __cdecl FMOD::System::setOutputByPlugin(unsigned int))
+                  ?setPan@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@M@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::setPan(float))
+                  ?setParameterBool@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@H_N@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::setParameterBool(int,bool))
+                  ?setParameterData@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@HPEAXI@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::setParameterData(int,void *,unsigned int))
+                  ?setParameterFloat@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@HM@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::setParameterFloat(int,float))
+                  ?setParameterInt@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@HH@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::setParameterInt(int,int))
+                  ?setPaused@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@_N@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::setPaused(bool))
+                  ?setPitch@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@M@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::setPitch(float))
+                  ?setPluginPath@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEBD@Z (public: enum FMOD_RESULT __cdecl FMOD::System::setPluginPath(char const *))
+                  ?setPolygonAttributes@Geometry@FMOD@@QEAA?AW4FMOD_RESULT@@HMM_N@Z (public: enum FMOD_RESULT __cdecl FMOD::Geometry::setPolygonAttributes(int,float,float,bool))
+                  ?setPolygonVertex@Geometry@FMOD@@QEAA?AW4FMOD_RESULT@@HHPEBUFMOD_VECTOR@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Geometry::setPolygonVertex(int,int,struct FMOD_VECTOR const *))
+                  ?setPosition@Channel@FMOD@@QEAA?AW4FMOD_RESULT@@II@Z (public: enum FMOD_RESULT __cdecl FMOD::Channel::setPosition(unsigned int,unsigned int))
+                  ?setPosition@Geometry@FMOD@@QEAA?AW4FMOD_RESULT@@PEBUFMOD_VECTOR@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Geometry::setPosition(struct FMOD_VECTOR const *))
+                  ?setPriority@Channel@FMOD@@QEAA?AW4FMOD_RESULT@@H@Z (public: enum FMOD_RESULT __cdecl FMOD::Channel::setPriority(int))
+                  ?setProperties@Reverb3D@FMOD@@QEAA?AW4FMOD_RESULT@@PEBUFMOD_REVERB_PROPERTIES@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Reverb3D::setProperties(struct FMOD_REVERB_PROPERTIES const *))
+                  ?setReverbProperties@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@HM@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::setReverbProperties(int,float))
+                  ?setReverbProperties@System@FMOD@@QEAA?AW4FMOD_RESULT@@HPEBUFMOD_REVERB_PROPERTIES@@@Z (public: enum FMOD_RESULT __cdecl FMOD::System::setReverbProperties(int,struct FMOD_REVERB_PROPERTIES const *))
+                  ?setRotation@Geometry@FMOD@@QEAA?AW4FMOD_RESULT@@PEBUFMOD_VECTOR@@0@Z (public: enum FMOD_RESULT __cdecl FMOD::Geometry::setRotation(struct FMOD_VECTOR const *,struct FMOD_VECTOR const *))
+                  ?setScale@Geometry@FMOD@@QEAA?AW4FMOD_RESULT@@PEBUFMOD_VECTOR@@@Z (public: enum FMOD_RESULT __cdecl FMOD::Geometry::setScale(struct FMOD_VECTOR const *))
+                  ?setSoftwareChannels@System@FMOD@@QEAA?AW4FMOD_RESULT@@H@Z (public: enum FMOD_RESULT __cdecl FMOD::System::setSoftwareChannels(int))
+                  ?setSoftwareFormat@System@FMOD@@QEAA?AW4FMOD_RESULT@@HW4FMOD_SPEAKERMODE@@H@Z (public: enum FMOD_RESULT __cdecl FMOD::System::setSoftwareFormat(int,enum FMOD_SPEAKERMODE,int))
+                  ?setSoundGroup@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAVSoundGroup@2@@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::setSoundGroup(class FMOD::SoundGroup *))
+                  ?setSpeakerPosition@System@FMOD@@QEAA?AW4FMOD_RESULT@@W4FMOD_SPEAKER@@MM_N@Z (public: enum FMOD_RESULT __cdecl FMOD::System::setSpeakerPosition(enum FMOD_SPEAKER,float,float,bool))
+                  ?setStreamBufferSize@System@FMOD@@QEAA?AW4FMOD_RESULT@@II@Z (public: enum FMOD_RESULT __cdecl FMOD::System::setStreamBufferSize(unsigned int,unsigned int))
+                  ?setUserData@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@PEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::setUserData(void *))
+                  ?setUserData@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@PEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::setUserData(void *))
+                  ?setUserData@DSPConnection@FMOD@@QEAA?AW4FMOD_RESULT@@PEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::DSPConnection::setUserData(void *))
+                  ?setUserData@Geometry@FMOD@@QEAA?AW4FMOD_RESULT@@PEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::Geometry::setUserData(void *))
+                  ?setUserData@GeometryI@FMOD@@QEAA?AW4FMOD_RESULT@@PEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::GeometryI::setUserData(void *))
+                  ?setUserData@Reverb3D@FMOD@@QEAA?AW4FMOD_RESULT@@PEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::Reverb3D::setUserData(void *))
+                  ?setUserData@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::setUserData(void *))
+                  ?setUserData@SoundGroup@FMOD@@QEAA?AW4FMOD_RESULT@@PEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::SoundGroup::setUserData(void *))
+                  ?setUserData@System@FMOD@@QEAA?AW4FMOD_RESULT@@PEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::System::setUserData(void *))
+                  ?setUserDataInternal@SoundI@FMOD@@QEAA?AW4FMOD_RESULT@@PEAX@Z (public: enum FMOD_RESULT __cdecl FMOD::SoundI::setUserDataInternal(void *))
+                  ?setVolume@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@M@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::setVolume(float))
+                  ?setVolume@SoundGroup@FMOD@@QEAA?AW4FMOD_RESULT@@M@Z (public: enum FMOD_RESULT __cdecl FMOD::SoundGroup::setVolume(float))
+                  ?setVolumeRamp@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@_N@Z (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::setVolumeRamp(bool))
+                  ?setWetDryMix@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@MMM@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::setWetDryMix(float,float,float))
+                  ?showConfigDialog@DSP@FMOD@@QEAA?AW4FMOD_RESULT@@PEAX_N@Z (public: enum FMOD_RESULT __cdecl FMOD::DSP::showConfigDialog(void *,bool))
+                  ?stop@ChannelControl@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::ChannelControl::stop(void))
+                  ?stop@SoundGroup@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::SoundGroup::stop(void))
+                  ?unloadPlugin@System@FMOD@@QEAA?AW4FMOD_RESULT@@I@Z (public: enum FMOD_RESULT __cdecl FMOD::System::unloadPlugin(unsigned int))
+                  ?unlock@Sound@FMOD@@QEAA?AW4FMOD_RESULT@@PEAX0II@Z (public: enum FMOD_RESULT __cdecl FMOD::Sound::unlock(void *,void *,unsigned int,unsigned int))
+                  ?unlockDSP@System@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::System::unlockDSP(void))
+                  ?update@System@FMOD@@QEAA?AW4FMOD_RESULT@@XZ (public: enum FMOD_RESULT __cdecl FMOD::System::update(void))
+                  ?validate@ChannelI@FMOD@@SA?AW4FMOD_RESULT@@PEAVChannel@2@PEAPEAV12@PEAVSystemLockScope@2@@Z (public: static enum FMOD_RESULT __cdecl FMOD::ChannelI::validate(class FMOD::Channel *,class FMOD::ChannelI * *,class FMOD::SystemLockScope *))
+                  ?validate@DSPI@FMOD@@SA?AW4FMOD_RESULT@@PEAVDSP@2@PEAPEAV12@PEAVSystemLockScope@2@@Z (public: static enum FMOD_RESULT __cdecl FMOD::DSPI::validate(class FMOD::DSP *,class FMOD::DSPI * *,class FMOD::SystemLockScope *))
+                  ?validate@SystemI@FMOD@@SA?AW4FMOD_RESULT@@PEAVSystem@2@PEAPEAV12@PEAVSystemLockScope@2@@Z (public: static enum FMOD_RESULT __cdecl FMOD::SystemI::validate(class FMOD::System *,class FMOD::SystemI * *,class FMOD::SystemLockScope *))
+                  FMOD5_ChannelGroup_AddDSP
+                  FMOD5_ChannelGroup_AddFadePoint
+                  FMOD5_ChannelGroup_AddGroup
+                  FMOD5_ChannelGroup_Get3DAttributes
+                  FMOD5_ChannelGroup_Get3DConeOrientation
+                  FMOD5_ChannelGroup_Get3DConeSettings
+                  FMOD5_ChannelGroup_Get3DCustomRolloff
+                  FMOD5_ChannelGroup_Get3DDistanceFilter
+                  FMOD5_ChannelGroup_Get3DDopplerLevel
+                  FMOD5_ChannelGroup_Get3DLevel
+                  FMOD5_ChannelGroup_Get3DMinMaxDistance
+                  FMOD5_ChannelGroup_Get3DOcclusion
+                  FMOD5_ChannelGroup_Get3DSpread
+                  FMOD5_ChannelGroup_GetAudibility
+                  FMOD5_ChannelGroup_GetChannel
+                  FMOD5_ChannelGroup_GetDSP
+                  FMOD5_ChannelGroup_GetDSPClock
+                  FMOD5_ChannelGroup_GetDSPIndex
+                  FMOD5_ChannelGroup_GetDelay
+                  FMOD5_ChannelGroup_GetFadePoints
+                  FMOD5_ChannelGroup_GetGroup
+                  FMOD5_ChannelGroup_GetLowPassGain
+                  FMOD5_ChannelGroup_GetMixMatrix
+                  FMOD5_ChannelGroup_GetMode
+                  FMOD5_ChannelGroup_GetMute
+                  FMOD5_ChannelGroup_GetName
+                  FMOD5_ChannelGroup_GetNumChannels
+                  FMOD5_ChannelGroup_GetNumDSPs
+                  FMOD5_ChannelGroup_GetNumGroups
+                  FMOD5_ChannelGroup_GetParentGroup
+                  FMOD5_ChannelGroup_GetPaused
+                  FMOD5_ChannelGroup_GetPitch
+                  FMOD5_ChannelGroup_GetReverbProperties
+                  FMOD5_ChannelGroup_GetSystemObject
+                  FMOD5_ChannelGroup_GetUserData
+                  FMOD5_ChannelGroup_GetVolume
+                  FMOD5_ChannelGroup_GetVolumeRamp
+                  FMOD5_ChannelGroup_IsPlaying
+                  FMOD5_ChannelGroup_Release
+                  FMOD5_ChannelGroup_RemoveDSP
+                  FMOD5_ChannelGroup_RemoveFadePoints
+                  FMOD5_ChannelGroup_Set3DAttributes
+                  FMOD5_ChannelGroup_Set3DConeOrientation
+                  FMOD5_ChannelGroup_Set3DConeSettings
+                  FMOD5_ChannelGroup_Set3DCustomRolloff
+                  FMOD5_ChannelGroup_Set3DDistanceFilter
+                  FMOD5_ChannelGroup_Set3DDopplerLevel
+                  FMOD5_ChannelGroup_Set3DLevel
+                  FMOD5_ChannelGroup_Set3DMinMaxDistance
+                  FMOD5_ChannelGroup_Set3DOcclusion
+                  FMOD5_ChannelGroup_Set3DSpread
+                  FMOD5_ChannelGroup_SetCallback
+                  FMOD5_ChannelGroup_SetDSPIndex
+                  FMOD5_ChannelGroup_SetDelay
+                  FMOD5_ChannelGroup_SetFadePointRamp
+                  FMOD5_ChannelGroup_SetLowPassGain
+                  FMOD5_ChannelGroup_SetMixLevelsInput
+                  FMOD5_ChannelGroup_SetMixLevelsOutput
+                  FMOD5_ChannelGroup_SetMixMatrix
+                  FMOD5_ChannelGroup_SetMode
+                  FMOD5_ChannelGroup_SetMute
+                  FMOD5_ChannelGroup_SetPan
+                  FMOD5_ChannelGroup_SetPaused
+                  FMOD5_ChannelGroup_SetPitch
+                  FMOD5_ChannelGroup_SetReverbProperties
+                  FMOD5_ChannelGroup_SetUserData
+                  FMOD5_ChannelGroup_SetVolume
+                  FMOD5_ChannelGroup_SetVolumeRamp
+                  FMOD5_ChannelGroup_Stop
+                  FMOD5_Channel_AddDSP
+                  FMOD5_Channel_AddFadePoint
+                  FMOD5_Channel_Get3DAttributes
+                  FMOD5_Channel_Get3DConeOrientation
+                  FMOD5_Channel_Get3DConeSettings
+                  FMOD5_Channel_Get3DCustomRolloff
+                  FMOD5_Channel_Get3DDistanceFilter
+                  FMOD5_Channel_Get3DDopplerLevel
+                  FMOD5_Channel_Get3DLevel
+                  FMOD5_Channel_Get3DMinMaxDistance
+                  FMOD5_Channel_Get3DOcclusion
+                  FMOD5_Channel_Get3DSpread
+                  FMOD5_Channel_GetAudibility
+                  FMOD5_Channel_GetChannelGroup
+                  FMOD5_Channel_GetCurrentSound
+                  FMOD5_Channel_GetDSP
+                  FMOD5_Channel_GetDSPClock
+                  FMOD5_Channel_GetDSPIndex
+                  FMOD5_Channel_GetDelay
+                  FMOD5_Channel_GetFadePoints
+                  FMOD5_Channel_GetFrequency
+                  FMOD5_Channel_GetIndex
+                  FMOD5_Channel_GetLoopCount
+                  FMOD5_Channel_GetLoopPoints
+                  FMOD5_Channel_GetLowPassGain
+                  FMOD5_Channel_GetMixMatrix
+                  FMOD5_Channel_GetMode
+                  FMOD5_Channel_GetMute
+                  FMOD5_Channel_GetNumDSPs
+                  FMOD5_Channel_GetPaused
+                  FMOD5_Channel_GetPitch
+                  FMOD5_Channel_GetPosition
+                  FMOD5_Channel_GetPriority
+                  FMOD5_Channel_GetReverbProperties
+                  FMOD5_Channel_GetSystemObject
+                  FMOD5_Channel_GetUserData
+                  FMOD5_Channel_GetVolume
+                  FMOD5_Channel_GetVolumeRamp
+                  FMOD5_Channel_IsPlaying
+                  FMOD5_Channel_IsVirtual
+                  FMOD5_Channel_RemoveDSP
+                  FMOD5_Channel_RemoveFadePoints
+                  FMOD5_Channel_Set3DAttributes
+                  FMOD5_Channel_Set3DConeOrientation
+                  FMOD5_Channel_Set3DConeSettings
+                  FMOD5_Channel_Set3DCustomRolloff
+                  FMOD5_Channel_Set3DDistanceFilter
+                  FMOD5_Channel_Set3DDopplerLevel
+                  FMOD5_Channel_Set3DLevel
+                  FMOD5_Channel_Set3DMinMaxDistance
+                  FMOD5_Channel_Set3DOcclusion
+                  FMOD5_Channel_Set3DSpread
+                  FMOD5_Channel_SetCallback
+                  FMOD5_Channel_SetChannelGroup
+                  FMOD5_Channel_SetDSPIndex
+                  FMOD5_Channel_SetDelay
+                  FMOD5_Channel_SetFadePointRamp
+                  FMOD5_Channel_SetFrequency
+                  FMOD5_Channel_SetLoopCount
+                  FMOD5_Channel_SetLoopPoints
+                  FMOD5_Channel_SetLowPassGain
+                  FMOD5_Channel_SetMixLevelsInput
+                  FMOD5_Channel_SetMixLevelsOutput
+                  FMOD5_Channel_SetMixMatrix
+                  FMOD5_Channel_SetMode
+                  FMOD5_Channel_SetMute
+                  FMOD5_Channel_SetPan
+                  FMOD5_Channel_SetPaused
+                  FMOD5_Channel_SetPitch
+                  FMOD5_Channel_SetPosition
+                  FMOD5_Channel_SetPriority
+                  FMOD5_Channel_SetReverbProperties
+                  FMOD5_Channel_SetUserData
+                  FMOD5_Channel_SetVolume
+                  FMOD5_Channel_SetVolumeRamp
+                  FMOD5_Channel_Stop
+                  FMOD5_DSPConnection_GetInput
+                  FMOD5_DSPConnection_GetMix
+                  FMOD5_DSPConnection_GetMixMatrix
+                  FMOD5_DSPConnection_GetOutput
+                  FMOD5_DSPConnection_GetType
+                  FMOD5_DSPConnection_GetUserData
+                  FMOD5_DSPConnection_SetMix
+                  FMOD5_DSPConnection_SetMixMatrix
+                  FMOD5_DSPConnection_SetUserData
+                  FMOD5_DSP_AddInput
+                  FMOD5_DSP_DisconnectAll
+                  FMOD5_DSP_DisconnectFrom
+                  FMOD5_DSP_GetActive
+                  FMOD5_DSP_GetBypass
+                  FMOD5_DSP_GetCPUUsage
+                  FMOD5_DSP_GetChannelFormat
+                  FMOD5_DSP_GetDataParameterIndex
+                  FMOD5_DSP_GetIdle
+                  FMOD5_DSP_GetInfo
+                  FMOD5_DSP_GetInput
+                  FMOD5_DSP_GetMeteringEnabled
+                  FMOD5_DSP_GetMeteringInfo
+                  FMOD5_DSP_GetNumInputs
+                  FMOD5_DSP_GetNumOutputs
+                  FMOD5_DSP_GetNumParameters
+                  FMOD5_DSP_GetOutput
+                  FMOD5_DSP_GetOutputChannelFormat
+                  FMOD5_DSP_GetParameterBool
+                  FMOD5_DSP_GetParameterData
+                  FMOD5_DSP_GetParameterFloat
+                  FMOD5_DSP_GetParameterInfo
+                  FMOD5_DSP_GetParameterInt
+                  FMOD5_DSP_GetSystemObject
+                  FMOD5_DSP_GetType
+                  FMOD5_DSP_GetUserData
+                  FMOD5_DSP_GetWetDryMix
+                  FMOD5_DSP_Release
+                  FMOD5_DSP_Reset
+                  FMOD5_DSP_SetActive
+                  FMOD5_DSP_SetBypass
+                  FMOD5_DSP_SetCallback
+                  FMOD5_DSP_SetChannelFormat
+                  FMOD5_DSP_SetMeteringEnabled
+                  FMOD5_DSP_SetParameterBool
+                  FMOD5_DSP_SetParameterData
+                  FMOD5_DSP_SetParameterFloat
+                  FMOD5_DSP_SetParameterInt
+                  FMOD5_DSP_SetUserData
+                  FMOD5_DSP_SetWetDryMix
+                  FMOD5_DSP_ShowConfigDialog
+                  FMOD5_Debug_Initialize
+                  FMOD5_File_GetDiskBusy
+                  FMOD5_File_SetDiskBusy
+                  FMOD5_Geometry_AddPolygon
+                  FMOD5_Geometry_GetActive
+                  FMOD5_Geometry_GetMaxPolygons
+                  FMOD5_Geometry_GetNumPolygons
+                  FMOD5_Geometry_GetPolygonAttributes
+                  FMOD5_Geometry_GetPolygonNumVertices
+                  FMOD5_Geometry_GetPolygonVertex
+                  FMOD5_Geometry_GetPosition
+                  FMOD5_Geometry_GetRotation
+                  FMOD5_Geometry_GetScale
+                  FMOD5_Geometry_GetUserData
+                  FMOD5_Geometry_Release
+                  FMOD5_Geometry_Save
+                  FMOD5_Geometry_SetActive
+                  FMOD5_Geometry_SetPolygonAttributes
+                  FMOD5_Geometry_SetPolygonVertex
+                  FMOD5_Geometry_SetPosition
+                  FMOD5_Geometry_SetRotation
+                  FMOD5_Geometry_SetScale
+                  FMOD5_Geometry_SetUserData
+                  FMOD5_Memory_GetStats
+                  FMOD5_Memory_Initialize
+                  FMOD5_Reverb3D_Get3DAttributes
+                  FMOD5_Reverb3D_GetActive
+                  FMOD5_Reverb3D_GetProperties
+                  FMOD5_Reverb3D_GetUserData
+                  FMOD5_Reverb3D_Release
+                  FMOD5_Reverb3D_Set3DAttributes
+                  FMOD5_Reverb3D_SetActive
+                  FMOD5_Reverb3D_SetProperties
+                  FMOD5_Reverb3D_SetUserData
+                  FMOD5_SoundGroup_GetMaxAudible
+                  FMOD5_SoundGroup_GetMaxAudibleBehavior
+                  FMOD5_SoundGroup_GetMuteFadeSpeed
+                  FMOD5_SoundGroup_GetName
+                  FMOD5_SoundGroup_GetNumPlaying
+                  FMOD5_SoundGroup_GetNumSounds
+                  FMOD5_SoundGroup_GetSound
+                  FMOD5_SoundGroup_GetSystemObject
+                  FMOD5_SoundGroup_GetUserData
+                  FMOD5_SoundGroup_GetVolume
+                  FMOD5_SoundGroup_Release
+                  FMOD5_SoundGroup_SetMaxAudible
+                  FMOD5_SoundGroup_SetMaxAudibleBehavior
+                  FMOD5_SoundGroup_SetMuteFadeSpeed
+                  FMOD5_SoundGroup_SetUserData
+                  FMOD5_SoundGroup_SetVolume
+                  FMOD5_SoundGroup_Stop
+                  FMOD5_Sound_AddSyncPoint
+                  FMOD5_Sound_DeleteSyncPoint
+                  FMOD5_Sound_Get3DConeSettings
+                  FMOD5_Sound_Get3DCustomRolloff
+                  FMOD5_Sound_Get3DMinMaxDistance
+                  FMOD5_Sound_GetDefaults
+                  FMOD5_Sound_GetFormat
+                  FMOD5_Sound_GetLength
+                  FMOD5_Sound_GetLoopCount
+                  FMOD5_Sound_GetLoopPoints
+                  FMOD5_Sound_GetMode
+                  FMOD5_Sound_GetMusicChannelVolume
+                  FMOD5_Sound_GetMusicNumChannels
+                  FMOD5_Sound_GetMusicSpeed
+                  FMOD5_Sound_GetName
+                  FMOD5_Sound_GetNumSubSounds
+                  FMOD5_Sound_GetNumSyncPoints
+                  FMOD5_Sound_GetNumTags
+                  FMOD5_Sound_GetOpenState
+                  FMOD5_Sound_GetSoundGroup
+                  FMOD5_Sound_GetSubSound
+                  FMOD5_Sound_GetSubSoundParent
+                  FMOD5_Sound_GetSyncPoint
+                  FMOD5_Sound_GetSyncPointInfo
+                  FMOD5_Sound_GetSystemObject
+                  FMOD5_Sound_GetTag
+                  FMOD5_Sound_GetUserData
+                  FMOD5_Sound_Lock
+                  FMOD5_Sound_ReadData
+                  FMOD5_Sound_Release
+                  FMOD5_Sound_SeekData
+                  FMOD5_Sound_Set3DConeSettings
+                  FMOD5_Sound_Set3DCustomRolloff
+                  FMOD5_Sound_Set3DMinMaxDistance
+                  FMOD5_Sound_SetDefaults
+                  FMOD5_Sound_SetLoopCount
+                  FMOD5_Sound_SetLoopPoints
+                  FMOD5_Sound_SetMode
+                  FMOD5_Sound_SetMusicChannelVolume
+                  FMOD5_Sound_SetMusicSpeed
+                  FMOD5_Sound_SetSoundGroup
+                  FMOD5_Sound_SetUserData
+                  FMOD5_Sound_Unlock
+                  FMOD5_System_AttachChannelGroupToPort
+                  FMOD5_System_AttachFileSystem
+                  FMOD5_System_Close
+                  FMOD5_System_Create
+                  FMOD5_System_CreateChannelGroup
+                  FMOD5_System_CreateDSP
+                  FMOD5_System_CreateDSPByPlugin
+                  FMOD5_System_CreateDSPByType
+                  FMOD5_System_CreateGeometry
+                  FMOD5_System_CreateReverb3D
+                  FMOD5_System_CreateSound
+                  FMOD5_System_CreateSoundGroup
+                  FMOD5_System_CreateStream
+                  FMOD5_System_DetachChannelGroupFromPort
+                  FMOD5_System_Get3DListenerAttributes
+                  FMOD5_System_Get3DNumListeners
+                  FMOD5_System_Get3DSettings
+                  FMOD5_System_GetAdvancedSettings
+                  FMOD5_System_GetCPUUsage
+                  FMOD5_System_GetChannel
+                  FMOD5_System_GetChannelsPlaying
+                  FMOD5_System_GetDSPBufferSize
+                  FMOD5_System_GetDSPInfoByPlugin
+                  FMOD5_System_GetDSPInfoByType
+                  FMOD5_System_GetDefaultMixMatrix
+                  FMOD5_System_GetDriver
+                  FMOD5_System_GetDriverInfo
+                  FMOD5_System_GetFileUsage
+                  FMOD5_System_GetGeometryOcclusion
+                  FMOD5_System_GetGeometrySettings
+                  FMOD5_System_GetMasterChannelGroup
+                  FMOD5_System_GetMasterSoundGroup
+                  FMOD5_System_GetNestedPlugin
+                  FMOD5_System_GetNetworkProxy
+                  FMOD5_System_GetNetworkTimeout
+                  FMOD5_System_GetNumDrivers
+                  FMOD5_System_GetNumNestedPlugins
+                  FMOD5_System_GetNumPlugins
+                  FMOD5_System_GetOutput
+                  FMOD5_System_GetOutputByPlugin
+                  FMOD5_System_GetOutputHandle
+                  FMOD5_System_GetPluginHandle
+                  FMOD5_System_GetPluginInfo
+                  FMOD5_System_GetRecordDriverInfo
+                  FMOD5_System_GetRecordNumDrivers
+                  FMOD5_System_GetRecordPosition
+                  FMOD5_System_GetReverbProperties
+                  FMOD5_System_GetSoftwareChannels
+                  FMOD5_System_GetSoftwareFormat
+                  FMOD5_System_GetSpeakerModeChannels
+                  FMOD5_System_GetSpeakerPosition
+                  FMOD5_System_GetStreamBufferSize
+                  FMOD5_System_GetUserData
+                  FMOD5_System_GetVersion
+                  FMOD5_System_Init
+                  FMOD5_System_IsRecording
+                  FMOD5_System_LoadGeometry
+                  FMOD5_System_LoadPlugin
+                  FMOD5_System_LockDSP
+                  FMOD5_System_MixerResume
+                  FMOD5_System_MixerSuspend
+                  FMOD5_System_PlayDSP
+                  FMOD5_System_PlaySound
+                  FMOD5_System_RecordStart
+                  FMOD5_System_RecordStop
+                  FMOD5_System_RegisterCodec
+                  FMOD5_System_RegisterDSP
+                  FMOD5_System_RegisterOutput
+                  FMOD5_System_Release
+                  FMOD5_System_Set3DListenerAttributes
+                  FMOD5_System_Set3DNumListeners
+                  FMOD5_System_Set3DRolloffCallback
+                  FMOD5_System_Set3DSettings
+                  FMOD5_System_SetAdvancedSettings
+                  FMOD5_System_SetCallback
+                  FMOD5_System_SetDSPBufferSize
+                  FMOD5_System_SetDriver
+                  FMOD5_System_SetFileSystem
+                  FMOD5_System_SetGeometrySettings
+                  FMOD5_System_SetNetworkProxy
+                  FMOD5_System_SetNetworkTimeout
+                  FMOD5_System_SetOutput
+                  FMOD5_System_SetOutputByPlugin
+                  FMOD5_System_SetPluginPath
+                  FMOD5_System_SetReverbProperties
+                  FMOD5_System_SetSoftwareChannels
+                  FMOD5_System_SetSoftwareFormat
+                  FMOD5_System_SetSpeakerPosition
+                  FMOD5_System_SetStreamBufferSize
+                  FMOD5_System_SetUserData
+                  FMOD5_System_UnloadPlugin
+                  FMOD5_System_UnlockDSP
+                  FMOD5_System_Update
+                  FMOD5_Thread_SetAttributes
+                  FMOD_ChannelGroup_AddDSP
+                  FMOD_ChannelGroup_AddFadePoint
+                  FMOD_ChannelGroup_AddGroup
+                  FMOD_ChannelGroup_Get3DAttributes
+                  FMOD_ChannelGroup_Get3DConeOrientation
+                  FMOD_ChannelGroup_Get3DConeSettings
+                  FMOD_ChannelGroup_Get3DCustomRolloff
+                  FMOD_ChannelGroup_Get3DDistanceFilter
+                  FMOD_ChannelGroup_Get3DDopplerLevel
+                  FMOD_ChannelGroup_Get3DLevel
+                  FMOD_ChannelGroup_Get3DMinMaxDistance
+                  FMOD_ChannelGroup_Get3DOcclusion
+                  FMOD_ChannelGroup_Get3DSpread
+                  FMOD_ChannelGroup_GetAudibility
+                  FMOD_ChannelGroup_GetChannel
+                  FMOD_ChannelGroup_GetDSP
+                  FMOD_ChannelGroup_GetDSPClock
+                  FMOD_ChannelGroup_GetDSPIndex
+                  FMOD_ChannelGroup_GetDelay
+                  FMOD_ChannelGroup_GetFadePoints
+                  FMOD_ChannelGroup_GetGroup
+                  FMOD_ChannelGroup_GetLowPassGain
+                  FMOD_ChannelGroup_GetMixMatrix
+                  FMOD_ChannelGroup_GetMode
+                  FMOD_ChannelGroup_GetMute
+                  FMOD_ChannelGroup_GetName
+                  FMOD_ChannelGroup_GetNumChannels
+                  FMOD_ChannelGroup_GetNumDSPs
+                  FMOD_ChannelGroup_GetNumGroups
+                  FMOD_ChannelGroup_GetParentGroup
+                  FMOD_ChannelGroup_GetPaused
+                  FMOD_ChannelGroup_GetPitch
+                  FMOD_ChannelGroup_GetReverbProperties
+                  FMOD_ChannelGroup_GetSystemObject
+                  FMOD_ChannelGroup_GetUserData
+                  FMOD_ChannelGroup_GetVolume
+                  FMOD_ChannelGroup_GetVolumeRamp
+                  FMOD_ChannelGroup_IsPlaying
+                  FMOD_ChannelGroup_Release
+                  FMOD_ChannelGroup_RemoveDSP
+                  FMOD_ChannelGroup_RemoveFadePoints
+                  FMOD_ChannelGroup_Set3DAttributes
+                  FMOD_ChannelGroup_Set3DConeOrientation
+                  FMOD_ChannelGroup_Set3DConeSettings
+                  FMOD_ChannelGroup_Set3DCustomRolloff
+                  FMOD_ChannelGroup_Set3DDistanceFilter
+                  FMOD_ChannelGroup_Set3DDopplerLevel
+                  FMOD_ChannelGroup_Set3DLevel
+                  FMOD_ChannelGroup_Set3DMinMaxDistance
+                  FMOD_ChannelGroup_Set3DOcclusion
+                  FMOD_ChannelGroup_Set3DSpread
+                  FMOD_ChannelGroup_SetCallback
+                  FMOD_ChannelGroup_SetDSPIndex
+                  FMOD_ChannelGroup_SetDelay
+                  FMOD_ChannelGroup_SetFadePointRamp
+                  FMOD_ChannelGroup_SetLowPassGain
+                  FMOD_ChannelGroup_SetMixLevelsInput
+                  FMOD_ChannelGroup_SetMixLevelsOutput
+                  FMOD_ChannelGroup_SetMixMatrix
+                  FMOD_ChannelGroup_SetMode
+                  FMOD_ChannelGroup_SetMute
+                  FMOD_ChannelGroup_SetPan
+                  FMOD_ChannelGroup_SetPaused
+                  FMOD_ChannelGroup_SetPitch
+                  FMOD_ChannelGroup_SetReverbProperties
+                  FMOD_ChannelGroup_SetUserData
+                  FMOD_ChannelGroup_SetVolume
+                  FMOD_ChannelGroup_SetVolumeRamp
+                  FMOD_ChannelGroup_Stop
+                  FMOD_Channel_AddDSP
+                  FMOD_Channel_AddFadePoint
+                  FMOD_Channel_Get3DAttributes
+                  FMOD_Channel_Get3DConeOrientation
+                  FMOD_Channel_Get3DConeSettings
+                  FMOD_Channel_Get3DCustomRolloff
+                  FMOD_Channel_Get3DDistanceFilter
+                  FMOD_Channel_Get3DDopplerLevel
+                  FMOD_Channel_Get3DLevel
+                  FMOD_Channel_Get3DMinMaxDistance
+                  FMOD_Channel_Get3DOcclusion
+                  FMOD_Channel_Get3DSpread
+                  FMOD_Channel_GetAudibility
+                  FMOD_Channel_GetChannelGroup
+                  FMOD_Channel_GetCurrentSound
+                  FMOD_Channel_GetDSP
+                  FMOD_Channel_GetDSPClock
+                  FMOD_Channel_GetDSPIndex
+                  FMOD_Channel_GetDelay
+                  FMOD_Channel_GetFadePoints
+                  FMOD_Channel_GetFrequency
+                  FMOD_Channel_GetIndex
+                  FMOD_Channel_GetLoopCount
+                  FMOD_Channel_GetLoopPoints
+                  FMOD_Channel_GetLowPassGain
+                  FMOD_Channel_GetMixMatrix
+                  FMOD_Channel_GetMode
+                  FMOD_Channel_GetMute
+                  FMOD_Channel_GetNumDSPs
+                  FMOD_Channel_GetPaused
+                  FMOD_Channel_GetPitch
+                  FMOD_Channel_GetPosition
+                  FMOD_Channel_GetPriority
+                  FMOD_Channel_GetReverbProperties
+                  FMOD_Channel_GetSystemObject
+                  FMOD_Channel_GetUserData
+                  FMOD_Channel_GetVolume
+                  FMOD_Channel_GetVolumeRamp
+                  FMOD_Channel_IsPlaying
+                  FMOD_Channel_IsVirtual
+                  FMOD_Channel_RemoveDSP
+                  FMOD_Channel_RemoveFadePoints
+                  FMOD_Channel_Set3DAttributes
+                  FMOD_Channel_Set3DConeOrientation
+                  FMOD_Channel_Set3DConeSettings
+                  FMOD_Channel_Set3DCustomRolloff
+                  FMOD_Channel_Set3DDistanceFilter
+                  FMOD_Channel_Set3DDopplerLevel
+                  FMOD_Channel_Set3DLevel
+                  FMOD_Channel_Set3DMinMaxDistance
+                  FMOD_Channel_Set3DOcclusion
+                  FMOD_Channel_Set3DSpread
+                  FMOD_Channel_SetCallback
+                  FMOD_Channel_SetChannelGroup
+                  FMOD_Channel_SetDSPIndex
+                  FMOD_Channel_SetDelay
+                  FMOD_Channel_SetFadePointRamp
+                  FMOD_Channel_SetFrequency
+                  FMOD_Channel_SetLoopCount
+                  FMOD_Channel_SetLoopPoints
+                  FMOD_Channel_SetLowPassGain
+                  FMOD_Channel_SetMixLevelsInput
+                  FMOD_Channel_SetMixLevelsOutput
+                  FMOD_Channel_SetMixMatrix
+                  FMOD_Channel_SetMode
+                  FMOD_Channel_SetMute
+                  FMOD_Channel_SetPan
+                  FMOD_Channel_SetPaused
+                  FMOD_Channel_SetPitch
+                  FMOD_Channel_SetPosition
+                  FMOD_Channel_SetPriority
+                  FMOD_Channel_SetReverbProperties
+                  FMOD_Channel_SetUserData
+                  FMOD_Channel_SetVolume
+                  FMOD_Channel_SetVolumeRamp
+                  FMOD_Channel_Stop
+                  FMOD_DSPConnection_GetInput
+                  FMOD_DSPConnection_GetMix
+                  FMOD_DSPConnection_GetMixMatrix
+                  FMOD_DSPConnection_GetOutput
+                  FMOD_DSPConnection_GetType
+                  FMOD_DSPConnection_GetUserData
+                  FMOD_DSPConnection_SetMix
+                  FMOD_DSPConnection_SetMixMatrix
+                  FMOD_DSPConnection_SetUserData
+                  FMOD_DSP_AddInput
+                  FMOD_DSP_DisconnectAll
+                  FMOD_DSP_DisconnectFrom
+                  FMOD_DSP_GetActive
+                  FMOD_DSP_GetBypass
+                  FMOD_DSP_GetCPUUsage
+                  FMOD_DSP_GetChannelFormat
+                  FMOD_DSP_GetDataParameterIndex
+                  FMOD_DSP_GetIdle
+                  FMOD_DSP_GetInfo
+                  FMOD_DSP_GetInput
+                  FMOD_DSP_GetMeteringEnabled
+                  FMOD_DSP_GetMeteringInfo
+                  FMOD_DSP_GetNumInputs
+                  FMOD_DSP_GetNumOutputs
+                  FMOD_DSP_GetNumParameters
+                  FMOD_DSP_GetOutput
+                  FMOD_DSP_GetOutputChannelFormat
+                  FMOD_DSP_GetParameterBool
+                  FMOD_DSP_GetParameterData
+                  FMOD_DSP_GetParameterFloat
+                  FMOD_DSP_GetParameterInfo
+                  FMOD_DSP_GetParameterInt
+                  FMOD_DSP_GetSystemObject
+                  FMOD_DSP_GetType
+                  FMOD_DSP_GetUserData
+                  FMOD_DSP_GetWetDryMix
+                  FMOD_DSP_Release
+                  FMOD_DSP_Reset
+                  FMOD_DSP_SetActive
+                  FMOD_DSP_SetBypass
+                  FMOD_DSP_SetCallback
+                  FMOD_DSP_SetChannelFormat
+                  FMOD_DSP_SetMeteringEnabled
+                  FMOD_DSP_SetParameterBool
+                  FMOD_DSP_SetParameterData
+                  FMOD_DSP_SetParameterFloat
+                  FMOD_DSP_SetParameterInt
+                  FMOD_DSP_SetUserData
+                  FMOD_DSP_SetWetDryMix
+                  FMOD_DSP_ShowConfigDialog
+                  FMOD_Debug_Initialize
+                  FMOD_File_GetDiskBusy
+                  FMOD_File_SetDiskBusy
+                  FMOD_Geometry_AddPolygon
+                  FMOD_Geometry_GetActive
+                  FMOD_Geometry_GetMaxPolygons
+                  FMOD_Geometry_GetNumPolygons
+                  FMOD_Geometry_GetPolygonAttributes
+                  FMOD_Geometry_GetPolygonNumVertices
+                  FMOD_Geometry_GetPolygonVertex
+                  FMOD_Geometry_GetPosition
+                  FMOD_Geometry_GetRotation
+                  FMOD_Geometry_GetScale
+                  FMOD_Geometry_GetUserData
+                  FMOD_Geometry_Release
+                  FMOD_Geometry_Save
+                  FMOD_Geometry_SetActive
+                  FMOD_Geometry_SetPolygonAttributes
+                  FMOD_Geometry_SetPolygonVertex
+                  FMOD_Geometry_SetPosition
+                  FMOD_Geometry_SetRotation
+                  FMOD_Geometry_SetScale
+                  FMOD_Geometry_SetUserData
+                  FMOD_Memory_GetStats
+                  FMOD_Memory_Initialize
+                  FMOD_OS_CriticalSection_Create
+                  FMOD_OS_CriticalSection_Enter
+                  FMOD_OS_CriticalSection_Free
+                  FMOD_OS_CriticalSection_IsLocked
+                  FMOD_OS_CriticalSection_Leave
+                  FMOD_OS_CriticalSection_TryEnter
+                  FMOD_OS_Debug_Output
+                  FMOD_OS_File_Close
+                  FMOD_OS_File_Open
+                  FMOD_OS_File_Read
+                  FMOD_OS_File_Seek
+                  FMOD_OS_File_Write
+                  FMOD_OS_Thread_Create
+                  FMOD_OS_Thread_Destroy
+                  FMOD_OS_Time_Sleep
+                  FMOD_Reverb3D_Get3DAttributes
+                  FMOD_Reverb3D_GetActive
+                  FMOD_Reverb3D_GetProperties
+                  FMOD_Reverb3D_GetUserData
+                  FMOD_Reverb3D_Release
+                  FMOD_Reverb3D_Set3DAttributes
+                  FMOD_Reverb3D_SetActive
+                  FMOD_Reverb3D_SetProperties
+                  FMOD_Reverb3D_SetUserData
+                  FMOD_SoundGroup_GetMaxAudible
+                  FMOD_SoundGroup_GetMaxAudibleBehavior
+                  FMOD_SoundGroup_GetMuteFadeSpeed
+                  FMOD_SoundGroup_GetName
+                  FMOD_SoundGroup_GetNumPlaying
+                  FMOD_SoundGroup_GetNumSounds
+                  FMOD_SoundGroup_GetSound
+                  FMOD_SoundGroup_GetSystemObject
+                  FMOD_SoundGroup_GetUserData
+                  FMOD_SoundGroup_GetVolume
+                  FMOD_SoundGroup_Release
+                  FMOD_SoundGroup_SetMaxAudible
+                  FMOD_SoundGroup_SetMaxAudibleBehavior
+                  FMOD_SoundGroup_SetMuteFadeSpeed
+                  FMOD_SoundGroup_SetUserData
+                  FMOD_SoundGroup_SetVolume
+                  FMOD_SoundGroup_Stop
+                  FMOD_Sound_AddSyncPoint
+                  FMOD_Sound_DeleteSyncPoint
+                  FMOD_Sound_Get3DConeSettings
+                  FMOD_Sound_Get3DCustomRolloff
+                  FMOD_Sound_Get3DMinMaxDistance
+                  FMOD_Sound_GetDefaults
+                  FMOD_Sound_GetFormat
+                  FMOD_Sound_GetLength
+                  FMOD_Sound_GetLoopCount
+                  FMOD_Sound_GetLoopPoints
+                  FMOD_Sound_GetMode
+                  FMOD_Sound_GetMusicChannelVolume
+                  FMOD_Sound_GetMusicNumChannels
+                  FMOD_Sound_GetMusicSpeed
+                  FMOD_Sound_GetName
+                  FMOD_Sound_GetNumSubSounds
+                  FMOD_Sound_GetNumSyncPoints
+                  FMOD_Sound_GetNumTags
+                  FMOD_Sound_GetOpenState
+                  FMOD_Sound_GetSoundGroup
+                  FMOD_Sound_GetSubSound
+                  FMOD_Sound_GetSubSoundParent
+                  FMOD_Sound_GetSyncPoint
+                  FMOD_Sound_GetSyncPointInfo
+                  FMOD_Sound_GetSystemObject
+                  FMOD_Sound_GetTag
+                  FMOD_Sound_GetUserData
+                  FMOD_Sound_Lock
+                  FMOD_Sound_ReadData
+                  FMOD_Sound_Release
+                  FMOD_Sound_SeekData
+                  FMOD_Sound_Set3DConeSettings
+                  FMOD_Sound_Set3DCustomRolloff
+                  FMOD_Sound_Set3DMinMaxDistance
+                  FMOD_Sound_SetDefaults
+                  FMOD_Sound_SetLoopCount
+                  FMOD_Sound_SetLoopPoints
+                  FMOD_Sound_SetMode
+                  FMOD_Sound_SetMusicChannelVolume
+                  FMOD_Sound_SetMusicSpeed
+                  FMOD_Sound_SetSoundGroup
+                  FMOD_Sound_SetUserData
+                  FMOD_Sound_Unlock
+                  FMOD_System_AttachChannelGroupToPort
+                  FMOD_System_AttachFileSystem
+                  FMOD_System_Close
+                  FMOD_System_Create
+                  FMOD_System_CreateChannelGroup
+                  FMOD_System_CreateDSP
+                  FMOD_System_CreateDSPByPlugin
+                  FMOD_System_CreateDSPByType
+                  FMOD_System_CreateGeometry
+                  FMOD_System_CreateReverb3D
+                  FMOD_System_CreateSound
+                  FMOD_System_CreateSoundGroup
+                  FMOD_System_CreateStream
+                  FMOD_System_DetachChannelGroupFromPort
+                  FMOD_System_Get3DListenerAttributes
+                  FMOD_System_Get3DNumListeners
+                  FMOD_System_Get3DSettings
+                  FMOD_System_GetAdvancedSettings
+                  FMOD_System_GetCPUUsage
+                  FMOD_System_GetChannel
+                  FMOD_System_GetChannelsPlaying
+                  FMOD_System_GetDSPBufferSize
+                  FMOD_System_GetDSPInfoByPlugin
+                  FMOD_System_GetDSPInfoByType
+                  FMOD_System_GetDefaultMixMatrix
+                  FMOD_System_GetDriver
+                  FMOD_System_GetDriverInfo
+                  FMOD_System_GetFileUsage
+                  FMOD_System_GetGeometryOcclusion
+                  FMOD_System_GetGeometrySettings
+                  FMOD_System_GetMasterChannelGroup
+                  FMOD_System_GetMasterSoundGroup
+                  FMOD_System_GetNestedPlugin
+                  FMOD_System_GetNetworkProxy
+                  FMOD_System_GetNetworkTimeout
+                  FMOD_System_GetNumDrivers
+                  FMOD_System_GetNumNestedPlugins
+                  FMOD_System_GetNumPlugins
+                  FMOD_System_GetOutput
+                  FMOD_System_GetOutputByPlugin
+                  FMOD_System_GetOutputHandle
+                  FMOD_System_GetPluginHandle
+                  FMOD_System_GetPluginInfo
+                  FMOD_System_GetRecordDriverInfo
+                  FMOD_System_GetRecordNumDrivers
+                  FMOD_System_GetRecordPosition
+                  FMOD_System_GetReverbProperties
+                  FMOD_System_GetSoftwareChannels
+                  FMOD_System_GetSoftwareFormat
+                  FMOD_System_GetSpeakerModeChannels
+                  FMOD_System_GetSpeakerPosition
+                  FMOD_System_GetStreamBufferSize
+                  FMOD_System_GetUserData
+                  FMOD_System_GetVersion
+                  FMOD_System_Init
+                  FMOD_System_IsRecording
+                  FMOD_System_LoadGeometry
+                  FMOD_System_LoadPlugin
+                  FMOD_System_LockDSP
+                  FMOD_System_MixerResume
+                  FMOD_System_MixerSuspend
+                  FMOD_System_PlayDSP
+                  FMOD_System_PlaySound
+                  FMOD_System_RecordStart
+                  FMOD_System_RecordStop
+                  FMOD_System_RegisterCodec
+                  FMOD_System_RegisterDSP
+                  FMOD_System_RegisterOutput
+                  FMOD_System_Release
+                  FMOD_System_Set3DListenerAttributes
+                  FMOD_System_Set3DNumListeners
+                  FMOD_System_Set3DRolloffCallback
+                  FMOD_System_Set3DSettings
+                  FMOD_System_SetAdvancedSettings
+                  FMOD_System_SetCallback
+                  FMOD_System_SetDSPBufferSize
+                  FMOD_System_SetDriver
+                  FMOD_System_SetFileSystem
+                  FMOD_System_SetGeometrySettings
+                  FMOD_System_SetNetworkProxy
+                  FMOD_System_SetNetworkTimeout
+                  FMOD_System_SetOutput
+                  FMOD_System_SetOutputByPlugin
+                  FMOD_System_SetPluginPath
+                  FMOD_System_SetReverbProperties
+                  FMOD_System_SetSoftwareChannels
+                  FMOD_System_SetSoftwareFormat
+                  FMOD_System_SetSpeakerPosition
+                  FMOD_System_SetStreamBufferSize
+                  FMOD_System_SetUserData
+                  FMOD_System_UnloadPlugin
+                  FMOD_System_UnlockDSP
+                  FMOD_System_Update
+                  FMOD_Thread_SetAttributes
+
+  Summary
+
+          BA .debug$S
+          14 .idata$2
+          14 .idata$3
+           8 .idata$4
+           8 .idata$5
+           A .idata$6
