@@ -1,5 +1,5 @@
 # odin-fmod
-WIP Odin bindings for [FMOD](https://www.fmod.com/).
+Odin bindings for [FMOD](https://www.fmod.com/).
 
 Includes `core`, `fsbank` and `studio` APIs. The `dll` and `lib` files are downloaded from https://www.fmod.com/download.
 

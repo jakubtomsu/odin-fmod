@@ -11,7 +11,7 @@ package fmod_core
 // https://fmod.com/docs/2.02/api/core-api.html                                            
 // ========================================================================================
 
-LOGGING_ENABLED :: #config(FMOD_CORE_LOGGING_ENABLED, ODIN_DEBUG)
+LOGGING_ENABLED :: #config(FMOD_LOGGING_ENABLED, ODIN_DEBUG)
 
 when ODIN_OS == .Windows {
     when LOGGING_ENABLED {
